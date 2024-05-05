@@ -1,0 +1,46 @@
+System.TerminateProcess.TerminateProcessByName ProcessName: $'''EXCEL'''
+**REGION Initialization
+SET ProjectPath TO $'''C:\\Users\\BAPS\\Desktop\\Jinay Shah - STTL\\Month 4\\RPA\\Microsoft Power Automate\\08-04-2024'''
+SET RowNumber TO 0
+SET TableNumber TO 0
+Excel.LaunchExcel.LaunchAndOpenUnderExistingProcess Path: $'''%ProjectPath%\\Output\\Invoice Data_clarios.xlsx''' Visible: True ReadOnly: False Instance=> ExcelInstance
+**ENDREGION
+Folder.GetFiles Folder: $'''%ProjectPath%\\Input\\PDF Remit files\\clarios\\''' FileFilter: $'''*''' IncludeSubfolders: False FailOnAccessDenied: True SortBy1: Folder.SortBy.NoSort SortDescending1: False SortBy2: Folder.SortBy.NoSort SortDescending2: False SortBy3: Folder.SortBy.NoSort SortDescending3: False Files=> Files
+LOOP FOREACH File IN Files
+    **REGION Pdf Extraction
+    Pdf.ExtractTextFromPDF.ExtractText PDFFile: File DetectLayout: False ExtractedText=> ExtractedPDFText
+    Pdf.ExtractTablesFromPDF.ExtractTables PDFFile: File MultiPageTables: False SetFirstRowAsHeader: False ExtractedPDFTables=> ExtractedPDFTables
+    **ENDREGION
+    **REGION Excel Operation
+    LOOP FOREACH CurrentTable IN ExtractedPDFTables
+        IF (TableNumber mod 2) = 0 THEN
+            SET TableNumber TO TableNumber + 1
+            NEXT LOOP
+        END
+        SET TableNumber TO TableNumber + 1
+        LOOP FOREACH CurrentRow IN CurrentTable.DataTable
+            IF IsBlank(CurrentRow[0]) THEN
+                NEXT LOOP
+            END
+            Text.SplitText.SplitWithDelimiter Text: CurrentRow CustomDelimiter: $''', ''' IsRegEx: False Result=> TextList
+            Excel.GetFirstFreeColumnRow Instance: ExcelInstance FirstFreeRow=> FirstFreeRow
+            IF TextList[4] = $'''K''' THEN
+                Excel.WriteToExcel.WriteCell Instance: ExcelInstance Value: {[TextList[0], TextList[1], TextList[2], TextList[5]] } Column: $'''A''' Row: FirstFreeRow
+            ELSE
+                Excel.WriteToExcel.WriteCell Instance: ExcelInstance Value: {[TextList[0], TextList[1], TextList[2], TextList[4]] } Column: $'''A''' Row: FirstFreeRow
+            END
+        END
+    END
+    Text.ParseText.RegexParseForFirstOccurrence Text: ExtractedPDFText TextToFind: $'''.+(?=\\r?\\n.*\\r?\\nSum total)''' StartingPosition: 0 IgnoreCase: False Match=> Match
+    IF Contains(Match, $'''1679402_Saint Joseph''', False) THEN
+        Text.Replace Text: Match TextToFind: $'''1679402_Saint Joseph''' IsRegEx: False IgnoreCase: False ReplaceWith: $'''1679402_Saint_Joseph''' ActivateEscapeSequences: False Result=> Match
+    END
+    Text.SplitText.Split Text: Match StandardDelimiter: Text.StandardDelimiter.Space DelimiterTimes: 1 Result=> TextList1
+    Excel.GetFirstFreeColumnRow Instance: ExcelInstance FirstFreeRow=> FirstFreeRow
+    Excel.WriteToExcel.WriteCell Instance: ExcelInstance Value: {[TextList1[0], TextList1[1], TextList1[2], TextList1[4]] } Column: $'''A''' Row: FirstFreeRow
+    SET TableNumber TO 0
+    **ENDREGION
+END
+**REGION End
+Excel.CloseExcel.CloseAndSave Instance: ExcelInstance
+**ENDREGION

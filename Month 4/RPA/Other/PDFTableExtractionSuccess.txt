@@ -1,0 +1,30 @@
+System.TerminateProcess.TerminateProcessByName ProcessName: $'''EXCEL'''
+**REGION Initialization
+SET ProjectPath TO $'''C:\\Users\\BAPS\\Desktop\\Jinay Shah - STTL\\Month 4\\RPA\\Inhouse Task'''
+Variables.CreateNewList List=> ScannedPDF
+Excel.LaunchExcel.LaunchAndOpenUnderExistingProcess Path: $'''%ProjectPath%\\Output\\PDFExtractionSuccess.xlsx''' Visible: True ReadOnly: False Instance=> ExcelInstance
+**ENDREGION
+**REGION Pdf Extraction
+Folder.GetFiles Folder: $'''%ProjectPath%\\Input''' FileFilter: $'''*''' IncludeSubfolders: False FailOnAccessDenied: True SortBy1: Folder.SortBy.NoSort SortDescending1: False SortBy2: Folder.SortBy.NoSort SortDescending2: False SortBy3: Folder.SortBy.NoSort SortDescending3: False Files=> Files
+LOOP FOREACH File IN Files
+    Excel.SetActiveWorksheet.ActivateWorksheetByName Instance: ExcelInstance Name: $'''TableExtraction'''
+    Excel.GetFirstFreeColumnRow Instance: ExcelInstance FirstFreeColumn=> FirstFreeColumn FirstFreeRow=> FirstFreeRow
+    Pdf.ExtractTablesFromPDF.ExtractTables PDFFile: File MultiPageTables: True SetFirstRowAsHeader: True ExtractedPDFTables=> ExtractedPDFTables
+    ON ERROR
+        CALL 'Catch Error'
+        THROW ERROR
+    END
+    IF ExtractedPDFTables.Count > 0 THEN
+        SET Status TO $'''Success'''
+        Excel.WriteToExcel.WriteCell Instance: ExcelInstance Value: {[File.Name, Status] } Column: $'''A''' Row: FirstFreeRow
+    ELSE
+        SET Status TO $'''Failure'''
+        Excel.WriteToExcel.WriteCell Instance: ExcelInstance Value: {[File.Name, Status] } Column: $'''A''' Row: FirstFreeRow
+        File.Move Files: File Destination: $'''%ProjectPath%\\Input\\Failure''' IfFileExists: File.IfExists.Overwrite MovedFiles=> MovedFiles
+    END
+END
+**ENDREGION
+**REGION End
+Excel.CloseExcel.CloseAndSave Instance: ExcelInstance
+**ENDREGION
+Email.SendEmail.AuthenticateAndSend SMTPServer: $'''smtp.gmail.com''' Port: 587 EnableSSL: True Username: $'''jinshah0322@gmail.com''' Password: P'AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAT/XST2NFsk6Ov5FXu0IJkgQAAAACAAAAAAAQZgAAAAEAACAAAAA36GpON6PW1U9oD94oNuwooCGFQ953GNjUaHg48xK9qQAAAAAOgAAAAAIAACAAAADNXSVZIfUwOFz8D5Z+Ry/dMNQToda1iG8lB/KHMPTcezAAAACe1BFWQ180YempK/tu4Kd8VHUc/x8FR7RgsFZZJF35qBB8xvRRNehGtYo7NVM6HK1AAAAARYipKe0Od26W/Bbpaez+U+2SwQzWYq8i6DkfhMO1xin7kM6UZUKcegsBk9CTb0xtGhAYioIJpwgYmiVGXSlmBw==' AcceptUntrustedCertificates: True SendFrom: $'''jinshah0322@gmail.com''' SenderDisplayName: $'''Jinay Shah''' SendTo: $'''jinshah0322@gmail.com''' Subject: $'''PDF Scanning Report''' Body: $'''Below is attached file which contains the status weather the file is scanned or not''' IsBodyHtml: False Attachments: $'''%ProjectPath%\\Output\\PDFExtractionSuccess.xlsx'''

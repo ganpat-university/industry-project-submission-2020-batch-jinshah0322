@@ -1,0 +1,4 @@
+DATE: (?<=DATE\r\n).+\d{4}
+Account Name: (?<=INVOICE NO\r\n.*\r\n).+
+Email: .+@+.
+Total: (?<=Total: \$)[\d\.]+

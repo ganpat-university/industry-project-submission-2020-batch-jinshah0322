@@ -1,0 +1,33 @@
+**REGION Initialization
+SET ProjectPath TO $'''C:\\Users\\BAPS\\Desktop\\Jinay Shah - STTL\\Month 4\\RPA\\Inhouse Task'''
+Excel.LaunchExcel.LaunchAndOpenUnderExistingProcess Path: $'''%ProjectPath%\\Output\\PDFExtractionSuccess.xlsx''' Visible: True ReadOnly: False Instance=> ExcelInstance
+SET Status TO $'''Failure'''
+**ENDREGION
+**REGION Pdf Table Extraction Success
+Folder.GetFiles Folder: $'''%ProjectPath%\\Input''' FileFilter: $'''*.pdf''' IncludeSubfolders: False FailOnAccessDenied: True SortBy1: Folder.SortBy.NoSort SortDescending1: False SortBy2: Folder.SortBy.NoSort SortDescending2: False SortBy3: Folder.SortBy.NoSort SortDescending3: False Files=> Files
+LOOP FOREACH File IN Files
+    Pdf.ExtractTablesFromPDF.ExtractTables PDFFile: File MultiPageTables: True SetFirstRowAsHeader: True ExtractedPDFTables=> ExtractedPDFTables
+    Excel.SetActiveWorksheet.ActivateWorksheetByName Instance: ExcelInstance Name: $'''TableExtraction'''
+    Excel.GetFirstFreeColumnRow Instance: ExcelInstance FirstFreeColumn=> FirstFreeColumn FirstFreeRow=> FirstFreeRow
+    IF ExtractedPDFTables.Count > 0 THEN
+        SET Status TO $'''Success'''
+        Excel.WriteToExcel.WriteCell Instance: ExcelInstance Value: {[File.Name, Status] } Column: $'''A''' Row: FirstFreeRow
+    ELSE
+        SET Status TO $'''Failure'''
+        Excel.WriteToExcel.WriteCell Instance: ExcelInstance Value: {[File.Name, Status] } Column: $'''A''' Row: FirstFreeRow
+    END
+    Pdf.ExtractTextFromPDF.ExtractText PDFFile: File DetectLayout: False ExtractedText=> ExtractedPDFText
+    Excel.SetActiveWorksheet.ActivateWorksheetByName Instance: ExcelInstance Name: $'''TextExtraction'''
+    Excel.GetFirstFreeColumnRow Instance: ExcelInstance FirstFreeColumn=> FirstFreeColumn FirstFreeRow=> FirstFreeRow
+    IF ExtractedPDFText.Length > 0 THEN
+        SET Status TO $'''Success'''
+        Excel.WriteToExcel.WriteCell Instance: ExcelInstance Value: {[File.Name, Status] } Column: $'''A''' Row: FirstFreeRow
+    ELSE
+        SET Status TO $'''Failure'''
+        Excel.WriteToExcel.WriteCell Instance: ExcelInstance Value: {[File.Name, Status] } Column: $'''A''' Row: FirstFreeRow
+    END
+END
+**ENDREGION
+**REGION End
+Excel.CloseExcel.CloseAndSave Instance: ExcelInstance
+**ENDREGION

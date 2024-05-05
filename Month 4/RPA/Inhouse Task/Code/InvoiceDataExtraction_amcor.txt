@@ -1,0 +1,31 @@
+System.TerminateProcess.TerminateProcessByName ProcessName: $'''EXCEL'''
+**REGION Initialization
+SET ProjectPath TO $'''C:\\Users\\BAPS\\Desktop\\Jinay Shah - STTL\\Month 4\\RPA\\Microsoft Power Automate\\08-04-2024'''
+SET RowNumber TO 0
+Excel.LaunchExcel.LaunchAndOpenUnderExistingProcess Path: $'''%ProjectPath%\\Output\\Invoice Data_amcor.xlsx''' Visible: True ReadOnly: False Instance=> ExcelInstance
+**ENDREGION
+Folder.GetFiles Folder: $'''%ProjectPath%\\Input\\PDF Remit files\\amcor\\''' FileFilter: $'''*''' IncludeSubfolders: False FailOnAccessDenied: True SortBy1: Folder.SortBy.NoSort SortDescending1: False SortBy2: Folder.SortBy.NoSort SortDescending2: False SortBy3: Folder.SortBy.NoSort SortDescending3: False Files=> Files
+LOOP FOREACH File IN Files
+    **REGION Pdf Extraction
+    Pdf.ExtractTextFromPDF.ExtractText PDFFile: File DetectLayout: False ExtractedText=> ExtractedPDFText
+    Text.ParseText.RegexParseForFirstOccurrence Text: ExtractedPDFText TextToFind: $'''(?<=Document Date Your Account With Us\\r\\n).+\\d{9}''' StartingPosition: 0 IgnoreCase: False Match=> Document
+    Pdf.ExtractTablesFromPDF.ExtractTables PDFFile: File MultiPageTables: True SetFirstRowAsHeader: True ExtractedPDFTables=> ExtractedPDFTables
+    **ENDREGION
+    **REGION Excel Operation
+    LOOP FOREACH CurrentRow IN ExtractedPDFTables[1].DataTable
+        Text.SplitText.Split Text: CurrentRow StandardDelimiter: Text.StandardDelimiter.Space DelimiterTimes: 1 Result=> TextList
+        IF TextList[0] = $'''Total''' THEN
+            EXIT LOOP
+        END
+        Text.AppendLine Text: TextList[1] LineToAppend: TextList[2] Result=> HalfDate
+        Text.AppendLine Text: HalfDate LineToAppend: TextList[3] Result=> Date
+        Text.ConvertDateTimeToText.FromCustomDateTime DateTime: Date CustomFormat: $'''dd-MM-yyyy''' Result=> FormattedDateTime
+        Excel.GetFirstFreeColumnRow Instance: ExcelInstance FirstFreeRow=> FirstFreeRow
+        Text.CropText.CropTextBeforeFlag Text: TextList[0] ToFlag: $''',''' IgnoreCase: False CroppedText=> InvoiceNumber
+        Excel.WriteToExcel.WriteCell Instance: ExcelInstance Value: {[Document, InvoiceNumber, FormattedDateTime, TextList[7]] } Column: $'''A''' Row: FirstFreeRow
+    END
+    **ENDREGION
+END
+**REGION End
+Excel.CloseExcel.CloseAndSave Instance: ExcelInstance
+**ENDREGION

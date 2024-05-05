@@ -1,0 +1,31 @@
+SET ExcelPath TO $'''C:\\Users\\BAPS\\Desktop\\RPA\\ErrorHandling.xlsx'''
+Excel.LaunchExcel.LaunchAndOpenUnderExistingProcess Path: ExcelPath Visible: True ReadOnly: False Instance=> ExcelInstance
+Excel.SetActiveWorksheet.ActivateWorksheetByName Instance: ExcelInstance Name: $'''Error-Handling'''
+Excel.ReadFromExcel.ReadAllCells Instance: ExcelInstance ReadAsText: False FirstLineIsHeader: True RangeValue=> ExcelData
+SET RowIndex TO 0
+LOOP FOREACH CurrentItem IN ExcelData
+    BLOCK 
+ON BLOCK ERROR
+
+END
+        Text.ToNumber Text: CurrentItem['NumberA'] Number=> NumberA
+        ON ERROR
+            SET TransactionStatus TO $'''%CurrentItem['NumberA']% can not be converted to number'''
+            THROW ERROR
+        END
+        Text.ToNumber Text: CurrentItem['NumberB'] Number=> NumberB
+        ON ERROR
+            SET TransactionStatus TO $'''%CurrentItem['NumberB']% can not be converted to number'''
+            THROW ERROR
+        END
+        SET ExcelData[RowIndex]['Result'] TO NumberA + NumberB
+        SET TransactionStatus TO $'''Success'''
+    END
+    IF Contains(TransactionStatus, $'''can not be converted to number''', False) THEN
+        File.WriteText File: $'''C:\\Users\\BAPS\\Desktop\\RPA\\Logging.txt''' TextToWrite: TransactionStatus AppendNewLine: True IfFileExists: File.IfFileExists.Append Encoding: File.FileEncoding.Unicode
+    END
+    SET ExcelData[RowIndex]['Status'] TO TransactionStatus
+    SET RowIndex TO RowIndex + 1
+END
+Excel.WriteToExcel.WriteCell Instance: ExcelInstance Value: ExcelData Column: $'''A''' Row: 2
+Excel.CloseExcel.CloseAndSave Instance: ExcelInstance

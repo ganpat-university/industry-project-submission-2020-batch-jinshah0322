@@ -1,0 +1,28 @@
+Folder.GetFiles Folder: $'''C:\\Users\\baps\\Desktop\\Power Automate\\Saputo\\Input''' FileFilter: $'''*''' IncludeSubfolders: False FailOnAccessDenied: True SortBy1: Folder.SortBy.NoSort SortDescending1: False SortBy2: Folder.SortBy.NoSort SortDescending2: False SortBy3: Folder.SortBy.NoSort SortDescending3: False Files=> PdfFiles
+Excel.LaunchExcel.LaunchAndOpenUnderExistingProcess Path: $'''C:\\Users\\baps\\Desktop\\Power Automate\\Saputo\\OutPut.xlsx''' Visible: True ReadOnly: False Instance=> OutPutExcel
+LOOP FOREACH Pdf IN PdfFiles
+    SET loopCount TO 1
+    **REGION Intialization
+    Pdf.ExtractTextFromPDF.ExtractTextFromPage PDFFile: Pdf PageNumber: 1 DetectLayout: False ExtractedText=> ExctractedPaymentAdvice
+    Text.ParseText.RegexParseForFirstOccurrence Text: ExctractedPaymentAdvice TextToFind: $'''(?<=Payment\\sNo\\.\\s?:\\s?)\\b\\w+\\b''' StartingPosition: 0 IgnoreCase: False Match=> Match
+    Pdf.ExtractTablesFromPDF.ExtractTables PDFFile: Pdf MultiPageTables: True SetFirstRowAsHeader: True ExtractedPDFTables=> ExtractedPDFTables
+    **ENDREGION
+    **REGION Excel Operation
+    LOOP FOREACH DataList IN ExtractedPDFTables
+        IF (loopCount mod 2) = 0 THEN
+            LOOP FOREACH CurrentItem IN DataList.DataTable
+                Text.SplitText.SplitWithDelimiter Text: CurrentItem CustomDelimiter: $''', ''' IsRegEx: False Result=> TextList
+                IF TextList[0] = $'''Total Payment''' THEN
+                    NEXT LOOP
+                END
+                Excel.GetFirstFreeColumnRow Instance: OutPutExcel FirstFreeRow=> FirstFreeRow
+                Excel.WriteToExcel.WriteCell Instance: OutPutExcel Value: {[Match, TextList[0], TextList[1], TextList[6]] } Column: $'''A''' Row: FirstFreeRow
+            END
+        END
+        Variables.IncreaseVariable Value: loopCount IncrementValue: 1
+    END
+    **ENDREGION
+END
+**REGION Excle close
+Excel.CloseExcel.CloseAndSave Instance: OutPutExcel
+**ENDREGION

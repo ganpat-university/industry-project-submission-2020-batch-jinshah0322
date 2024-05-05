@@ -1,0 +1,14 @@
+**REGION Initialization
+SET ProjectPath TO $'''C:\\Users\\BAPS\\Desktop\\Jinay Shah - STTL\\Month 4\\RPA\\Inhouse Task'''
+Variables.CreateNewList List=> ScannedPDF
+**ENDREGION
+**REGION Pdf Extraction
+Folder.GetFiles Folder: $'''%ProjectPath%\\Input''' FileFilter: $'''*.pdf''' IncludeSubfolders: False FailOnAccessDenied: True SortBy1: Folder.SortBy.NoSort SortDescending1: False SortBy2: Folder.SortBy.NoSort SortDescending2: False SortBy3: Folder.SortBy.NoSort SortDescending3: False Files=> Files
+LOOP FOREACH File IN Files
+    Pdf.ExtractTablesFromPDF.ExtractTables PDFFile: File MultiPageTables: True SetFirstRowAsHeader: True ExtractedPDFTables=> ExtractedPDFTables
+    IF ExtractedPDFTables.Count > 0 THEN
+        Variables.AddItemToList Item: File.Name List: ScannedPDF
+    END
+END
+Display.ShowMessageDialog.ShowMessage Title: $'''Scanned PDF''' Message: ScannedPDF Icon: Display.Icon.None Buttons: Display.Buttons.OK DefaultButton: Display.DefaultButton.Button1 IsTopMost: False ButtonPressed=> ButtonPressed
+**ENDREGION
