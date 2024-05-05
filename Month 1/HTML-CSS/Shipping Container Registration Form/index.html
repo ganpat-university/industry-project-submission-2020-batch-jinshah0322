@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Shipping Container Registration</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 form-container">
+                <h2 class="mb-4 text-center">Shipping Container Registration</h2>
+                <ul class="nav nav-pills mb-4 justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="ship-tab" data-toggle="pill" href="#ship-info">Ship</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="captain-tab" data-toggle="pill" href="#captain-info">Captain</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="container-tab" data-toggle="pill" href="#container-info">Container</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="route-tab" data-toggle="pill" href="#route-info">Source &
+                            Destination</a>
+                    </li>
+                </ul>
+                <form action="#">
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="ship-info">
+                            <div class="form-group">
+                                <label for="shipName">Ship Name:</label>
+                                <input type="text" class="form-control" id="shipName" placeholder="Enter Ship Name"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="shipType">Ship Type:</label>
+                                <select class="form-control" id="shipType" required>
+                                    <option value="" disabled>Select Ship Type</option>
+                                    <option value="Container Ship">Container Ship</option>
+                                    <option value="Cargo Ship">Cargo Ship</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="shipRegistrationNumber">Ship Registration Number:</label>
+                                <input type="text" class="form-control" id="shipRegistrationNumber"
+                                    placeholder="Enter Ship Registration Number" required>
+                            </div>
+
+                            <button class="btn btn-primary float-right" id="nextToCaptain" type="submit">Next</button>
+                        </div>
+
+                        <div class="tab-pane fade" id="captain-info">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="captainName">Captain Name:</label>
+                                    <input type="text" class="form-control" id="captainName" placeholder="Enter Captain Name"
+                                        required>
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    <label for="containerImage">Captain Image:</label>
+                                    <input type="file" class="form-control-file" id="containerImage" accept="image/*" required>
+                                    <small class="form-text text-muted">Please upload an image of the Captain.</small>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="departureDate">Departure Date:</label>
+                                <input type="date" class="form-control" id="departureDate" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="arrivalDate">Arrival Date:</label>
+                                <input type="date" class="form-control" id="arrivalDate" required>
+                            </div>
+
+                            <button class="btn btn-secondary mr-2" id="prevToShip">Previous</button>
+                            <button class="btn btn-primary float-right" id="nextToContainer" type="submit">Next</button>
+                        </div>
+
+                        <div class="tab-pane fade" id="container-info">
+                            <div class="form-group">
+                                <label for="containerNumber">Container Number:</label>
+                                <input type="text" class="form-control" id="containerNumber"
+                                    placeholder="Enter Container Number" required>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="containerType">Container Type:</label>
+                                    <select class="form-control" id="containerType" required>
+                                        <option value="" disabled>Select Container Type</option>
+                                        <option value="20ft">20ft</option>
+                                        <option value="40ft">40ft</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    <label for="containerWeight">Container Weight (in kg):</label>
+                                    <input type="number" class="form-control" id="containerWeight"
+                                        placeholder="Enter Container Weight" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="containerSize">Container Size:</label>
+                                    <select class="form-control" id="containerSize" required>
+                                        <option value="" disabled>Select Container Size</option>
+                                        <option value="Small">Small</option>
+                                        <option value="Medium">Medium</option>
+                                        <option value="Large">Large</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    <label for="containerImage">Container Image:</label>
+                                    <input type="file" class="form-control-file" id="containerImage" accept="image/*" required>
+                                    <small class="form-text text-muted">Please upload an image of the container.</small>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="goodsDescription">Goods Description:</label>
+                                <textarea class="form-control" id="goodsDescription" rows="3"
+                                    placeholder="Enter Goods Description" required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="sealNumber">Seal Number:</label>
+                                <input type="text" class="form-control" id="sealNumber" placeholder="Enter Seal Number"
+                                    required>
+                            </div>
+
+                            <button class="btn btn-secondary mr-2" id="prevToCaptain">Previous</button>
+                            <button class="btn btn-primary float-right" id="nextToRoute" type="submit">Next</button>
+                        </div>
+
+                        <div class="tab-pane fade" id="route-info">
+                            <div class="form-group">
+                                <label for="sourcePort">Source Port:</label>
+                                <input type="text" class="form-control" id="sourcePort" placeholder="Enter Source Port"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="destinationPort">Destination Port:</label>
+                                <input type="text" class="form-control" id="destinationPort"
+                                    placeholder="Enter Destination Port" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="shippingLine">Shipping Line:</label>
+                                <select class="form-control" id="shippingLine" required>
+                                    <option value="" disabled>Select Shipping Line</option>
+                                    <option value="Maersk">Maersk</option>
+                                    <option value="MSC">MSC</option>
+                                    <option value="CMA CGM">CMA CGM</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="transitPorts">Transit Ports:</label>
+                                <input type="text" class="form-control" id="transitPorts" placeholder="Enter Transit Ports">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="estimatedTransitTime">Estimated Transit Time:</label>
+                                <input type="text" class="form-control" id="estimatedTransitTime"
+                                    placeholder="Enter Estimated Transit Time">
+                            </div>
+
+                            <button class="btn btn-secondary mr-2" id="prevToContainer">Previous</button>
+                            <button type="submit" class="btn btn-primary float-right" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

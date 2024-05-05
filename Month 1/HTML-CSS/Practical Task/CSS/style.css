@@ -1,0 +1,651 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.body{
+    overflow-x: hidden;
+}
+
+.navtop{
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 30px;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    opacity: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar .leftList{
+    margin-left: 108px;
+}
+
+.navbar .rightList{
+    margin-right: 108px;
+}
+
+.navtop li{
+    list-style-type:none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.small{
+    font-size: 12px;
+}
+
+.medium{
+    font-size: 14px;
+}
+
+.large{
+    font-size: 16px;
+}
+
+.whiteTheme{
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius:50%;
+}
+
+.darkTheme{
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius:50%;
+    background-color: black;
+}
+
+.search{
+    width: 15px;
+    height: 15px;
+    background: transparent url('../Images/Path\ 1470.png') 0% 0% no-repeat padding-box;
+}
+
+.angledown{
+    width: 15px;
+    height: 15px;
+    background: transparent url('../Images/angledown.png');
+    background-size: 15px;
+}
+
+.navdown{
+    top: 30px;
+    left: 0px;
+    width: 100%;
+    height: 90px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 41px #00000029;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navdown  li{
+    list-style-type:none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 0 17px;
+}
+
+.navdown  .leftList{
+    margin-left: 90px;
+}
+
+.navdown .rightList{
+    display: flex;
+}
+
+.navdown-img1{
+    width: 145px;
+    height: 59px;
+    background: transparent url('../Images/Group 4016.png') ;
+}
+
+.navdown-img2{
+    width: 107px;
+    height: 60px;
+    background: transparent url('../Images/1200px-REC_logo.svg.png') ;
+}
+
+.navdown-img3{
+    width: 55px;
+    height: 63px;
+    background: transparent url('../Images/PFC Logo.png') 0% 0% no-repeat padding-box;
+}
+
+.navdown-home{
+    width: 20px;
+    height: 20px;
+    background: transparent url('../Images/home.png') ;
+}
+
+.registerLogin{
+    width: 148px;
+    height: 35px;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    border: 1px solid var(--unnamed-color-f58216);
+    background: #FFFFFF ;
+    border: 1px solid #F58216;
+    border-radius: 5px;
+    letter-spacing: NaNpx;
+    color: #F58216;
+}
+
+.footertop{
+    width: 100%;
+    height: 110px;
+    background: var(--unnamed-color-ffffff) ;
+    background: #FFFFFF ;
+    box-shadow: 0px -10px 20px #E5E5E591;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerdown{
+    width: 100%;
+    height: 85px;
+    background: var(--unnamed-color-1b2f68);
+    background: #1B2F68;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content{
+    font: var(--unnamed-font-style-normal) normal 300 13px/12px var(--unnamed-font-family-poppins);
+    text-align: left;
+    font: normal normal 300 13px/12px Poppins;
+    letter-spacing: 0.07px;
+    color: #FFFFFF;
+}
+
+.footer .leftList{
+    position:relative;
+    left: 108px;
+}
+
+.leftList-top p{
+    line-height: 2;
+}
+
+.rightList-top p{
+    line-height: 2;
+}
+
+.footer .centerList{
+    display: flex;
+    align-items: center;
+}
+.footer .centerList *{
+    margin: 0 6px;
+}
+
+.footer .rightList{
+    position:relative;
+    right: 108px;
+}
+
+.visitor{
+    text-align: right;
+}
+
+.facebook{
+    width: 11px;
+    height: 17px;
+    background: transparent url('../Images//Icon awesome-facebook-f.png') 0% 0% no-repeat padding-box;
+    border-right: 1px solid #ffffff;
+    padding: 0 5px;
+}
+
+.twitter{
+    width: 21px;
+    height: 17px;
+    background: transparent url('../Images/Icon awesome-twitter.png') 0% 0% no-repeat padding-box;
+    border-right: 1px solid #ffffff;
+    padding: 0 5px;
+}
+
+.yt{
+    width: 21px;
+    height: 17px;
+    background: transparent url('../Images/Path 53.png') 0% 0% no-repeat padding-box;
+    border-right: 1px solid #ffffff;
+    padding: 0 5px;
+}
+
+.insta{
+    width: 71px;
+    height: 21px;
+    background: transparent url('../Images/instagram.svg') 0% 0% no-repeat padding-box;
+}
+
+.footer .indiaGovIN{
+    width: 191px;
+    height: 46px;
+    background: transparent url('../Images/Image 26.png') 0% 0% no-repeat padding-box;
+}
+
+.footer .myGov{
+    width: 83px;
+    height: 75px;
+    background: transparent url('../Images/mygov.png') 0% 0% no-repeat padding-box;
+}
+
+.footer .azadi{
+    width: 105px;
+    height: 57px;
+    background: transparent url('../Images/Azadi_Ka_Amrit_Mahotsav_(English)_logo.svg.png') 0% 0% no-repeat padding-box;
+}
+
+.footer .G20{
+    width: 104px;
+    height: 57px;
+    background: transparent url('../Images/g20-logo-200-x-150.png') 0% 0% no-repeat padding-box;
+}
+
+.footer .PMIndia{
+    width: 124px;
+    height: 52px;
+    background: transparent url('../Images/pmindia-logo (2).png') 0% 0% no-repeat padding-box;
+}
+
+.footer .power{
+    width: 149px;
+    height: 74px;
+    background: transparent url('../Images/5-4.png') 0% 0% no-repeat padding-box;
+}
+
+.footer .mII{
+    width: 122px;
+    height: 57px;
+    background: transparent url('../Images/makeinindia.png') 0% 0% no-repeat padding-box; 
+}
+
+.footertop *{
+    margin: 0 54px;
+}
+
+.banner{
+    font-size: 50px;
+    color: #ffffff;
+    width: 100%;
+    height: 660px;
+    background: transparent url('../Images/Mask Group 138.png') 0% 0% no-repeat padding-box;
+    background-size: 100%;
+}
+
+.banner-content{
+    font-weight: 250;
+    position: relative;
+    left: 108px;
+    top: 60px;
+}
+
+strong{
+    font-weight: 700;
+}
+
+.modiji{
+    position: relative;
+    top: -260px;
+    left: 108px;
+    width: 1520px;
+    height: 176px;
+    display: flex;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 75px #00000052;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.modiji-img{
+    position: absolute;
+    left: 216px;
+    width: 249px;
+    height: 242px;
+    top: 454.5px;
+    background: transparent url('../Images/narendra_modi_left.png') 0% 0% no-repeat padding-box;
+    z-index: 1;
+}
+
+.modiji-quote{
+    position: relative;
+    width: 262px;
+    height: 198px;
+    left: 1250px;
+    bottom: 450px;
+    background: transparent url('../Images/quotation-mark.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    z-index: 1;
+}
+
+.schemes-background{
+    position: relative;
+    top: -503px;
+    width: 100%;
+    height: 543px;
+    background: transparent linear-gradient(291deg, #1B2F68 0%, #0E1834 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 50px #00000029;
+}
+
+.modi-speech{
+    display: flex;
+}
+
+.opening-quote{
+    position: absolute;
+    top: 552px;
+    left: 595px;
+    width: 31px;
+    height: 40px;
+    background: transparent url('../Images/quotation-mark-1.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    z-index: 1;
+    background-size: 24px;
+}
+
+.modi-speech .speech{
+    position: absolute;
+    top: 545px;
+    left: 626px;
+    z-index: 1;
+}
+
+.closing-quote{
+    position: absolute;
+    top: 570px;
+    right: 344px;
+    width: 31px;
+    height: 40px;
+    transform: matrix(-1, 0, 0, -1, 0, 0);
+    background: transparent url('../Images/quotation-mark-1.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    z-index: 1;
+    background-size: 24px;
+}
+
+.modiji-name{
+    position: absolute;
+    top: 620px;
+    left: 626px;
+    width: 200px;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #F58216;
+    z-index: 1;
+}
+
+.modiji-salutation{
+    position: absolute;
+    top: 645px;
+    left: 645px;
+    width: 289px;
+    height: 23px;
+    text-align: left;
+    color: #676767;
+    z-index: 1;
+}
+
+.schemes-text{
+    position: relative;
+    top: 110px;
+    left: 108px;
+    width: 141px;
+    height: 43px;
+    text-align: left;
+    font: normal normal 600 30px/24px Poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.schemes-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 115px;
+    left:108px;
+    width: 1520px;
+}
+
+.schemes-card1,.schemes-card2,.schemes-card3{
+    text-align: center;
+    color: #323232;
+    border-radius: 12px;
+}
+
+.schemes-card1 p,.schemes-card2 p,.schemes-card3 p{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 5px;
+    width: 430px;
+    height: 80px;
+    border-bottom-left-radius:12px ;
+    border-bottom-right-radius:12px ;
+}
+
+.reporting-background{
+    position: relative;
+    bottom: 502px;
+    width: 100%;
+    height: 404px;
+    background: #F6F4F4 0% 0% no-repeat padding-box;
+}
+
+.reporting-text{
+    position: relative;
+    top: 40px;
+    left: 108px;
+    width: 275px;
+    height: 43px;
+    text-align: left;
+    font: normal normal 600 30px/24px Poppins;
+    letter-spacing: 0px;
+    color: black;
+}
+
+.reporting-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 45px;
+    left:108px;
+    width: 1520px;
+}
+
+.reporting-card1,.reporting-card2,.reporting-card3,.reporting-card4,.reporting-card5,.reporting-card6{
+    text-align: center;
+    color: #323232;
+    border-radius: 12px;
+}
+
+.reporting-card1 p,.reporting-card2 p,.reporting-card3 p,.reporting-card4 p,.reporting-card5 p,.reporting-card6 p{
+    font-weight: 600;
+    font-size: 16px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -45px;
+    width: 215px;
+    height:50px;
+    border-bottom-left-radius:12px ;
+    border-bottom-right-radius:12px ;
+}
+
+.press-media{
+    display: flex;
+}
+
+.press-heading,.media-heading   {
+    display: flex;
+}
+
+.press-heading .text{
+    position: relative;
+    top: -450px;
+    left: 108px;
+    text-align: left;
+    font-size: 24px;
+    letter-spacing: 0px;
+    color: #323232;
+}
+
+.media-heading .text{
+    position: relative;
+    top: -450px;
+    left: 235px;
+    text-align: left;
+    font-size: 24px;
+    letter-spacing: 0px;
+    color: #323232;
+}
+
+.press-heading .view{
+    position: relative;
+    top: -443px;
+    left:302px;
+    text-align: right;
+    font: normal normal normal 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #F58216;
+}
+
+.media-heading .view{
+    position: relative;
+    top: -443px;
+    left:915px;
+    text-align: right;
+    font: normal normal normal 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #F58216;
+}
+
+.leftarrow{
+    position: relative;
+    bottom: 20px;
+    left: 75px;
+    width: 20px;
+    height: 15px;
+    background: transparent url('../Images/Icon metro-arrow-right-1.png') 0% 0% no-repeat padding-box;
+}
+
+.rightarrow{
+    position: relative;
+    bottom: 35px;
+    left: 105px;
+    width: 20px;
+    height: 15px;
+    background: transparent url('../Images/Icon metro-arrow-right.png') 0% 0% no-repeat padding-box;
+}
+
+.calender{
+    position: relative;
+    top: -440px;
+    left: 108px;
+}
+
+.date{
+    position: relative;
+    top: -465px;
+    left: 135px;
+    text-align: left;
+    font: normal normal normal 16px/24px Poppins;
+    letter-spacing: 0px;
+    color: #F58216;
+}
+
+.press-content{
+    position: relative;
+    top: -465px;
+    left: 108px;
+    letter-spacing: 0px;
+    color: #333333;
+}
+
+.pdf{
+    position: relative;
+    top: -512px;
+    left: 578px;
+}
+
+.hr{
+    position: relative;
+    top: -470px;
+    left: 108px;
+    width: 117%;
+}
+
+.media-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.media-img1{
+    position: relative;
+    bottom: 350px;
+}
+.media-img2{
+    margin-left: 105px;
+}
+
+.media-img-text{
+    position: relative;
+    top: 300px;
+    font: normal normal normal 16px/24px Poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.image1{
+    background: transparent url('../Images/Mask Group 31.png') 0% 0% no-repeat padding-box;
+    width: 440px;
+    height: 345px;
+}
+
+.image2{
+    background: transparent url('../Images/Mask Group 32.png') 0% 0% no-repeat padding-box;
+    width: 440px;
+    height: 345px;
+}
+
+.magnify{
+    position: absolute;
+    top: 110px;
+    left: 170px;
+    width: 95px;
+    height: 95px;
+
+}
+
+.youtube{
+    position: relative;
+    top: -550px;
+    left: 185px;
+    width: 65px;
+    height: 50px;
+}

@@ -1,0 +1,34 @@
+Date Functions:-
+
+1)GETDATE:Returns the current date and time
+SELECT GETDATE() AS CurrentDateTime
+
+2)CURRENT_TIMESTAMP:Returns the current date and time
+SELECT CURRENT_TIMESTAMP
+
+3)DATEADD:Adds a time/date interval to a date and then returns the date
+SELECT DATEADD(year, 1, '2024/01/22') AS DateAdd
+
+4)DATEDIFF:Returns the difference between two dates
+SELECT DATEDIFF(year, '2003/05/22', '2024/01/22') AS DateDiff
+
+5)DATEFROMPARTS:Returns a date from the specified parts (year, month, and day values)
+SELECT DATEFROMPARTS(2018, 10, 31) AS DateFromParts
+
+6)DATENAME:Returns a specified part of a date (as string)
+SELECT DATENAME(YEAR, '2024/01/22') AS DatePartString
+
+7)DATENAME:Returns a specified part of a date (as integer)
+SELECT DATENAME(year, '2024/01/22') AS DatePartString
+
+8)DAY:Return the day of the month for a date
+SELECT DAY('2024/01/22') AS DayOfMonth
+
+9)ISDATE:Checks an expression and returns 1 if it is a valid date, otherwise 0
+SELECT ISDATE('2024/01/22')
+
+10)MONTH:Returns the month part for a specified date
+SELECT MONTH('2024/01/22') AS Month
+
+11)YEAR:Returns the year part for a specified date
+SELECT YEAR('2024/01/22') AS Year

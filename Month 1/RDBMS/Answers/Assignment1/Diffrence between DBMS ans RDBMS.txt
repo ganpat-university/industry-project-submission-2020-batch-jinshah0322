@@ -1,0 +1,19 @@
+DBMS: It may use tables or other data structures, but there is no strict enforcement of relationships between tables.
+
+RDBMS: In an RDBMS, data is organized into tables with rows and columns. The relationship between tables is defined using keys, providing a more structured and organized approach to data storage.
+
+DBMS: DBMS systems may not enforce strict integrity constraints. Data consistency and accuracy are not strictly maintained.
+
+RDBMS: RDBMS systems enforce integrity constraints, such as primary keys, foreign keys, and unique constraints, ensuring data accuracy and consistency at the database level.
+
+DBMS: The query language may not necessarily be based on SQL (Structured Query Language) it can also be NoSQL(Not Only Structured Query Language).
+
+RDBMS: RDBMS systems use SQL as the standard query language.
+
+DBMS: Normalization, the process of organizing data to minimize redundancy and dependency, may not be a priority in DBMS systems. Redundant data may be present, leading to data inconsistency.
+
+RDBMS: RDBMS systems adhere to normalization principles to reduce data redundancy and dependency. This ensures that data is stored efficiently and avoids anomalies associated with redundant data.
+
+DBMS: DBMS systems may not fully support ACID properties (Atomicity, Consistency, Isolation, Durability) in transactions. Some level of inconsistency or data loss may occur in the case of failures.
+
+RDBMS: RDBMS systems adhere to ACID properties, ensuring that database transactions are reliable, consistent, and recoverable even in the event of failures.

@@ -1,0 +1,55 @@
+String Functions:-
+
+1)ASCII:returns the ASCII value of character
+select ASCII('A') as asciiValue
+
+2)CHAR:returns the character based on ascii value
+select CHAR(65) as character
+
+3)CHARINDEX:return the position of a substring in a string
+select CHARINDEX('i','jiany') as characterindex
+
+4)CONCAT:it is used to add two or more string together using CONCAT function
+select CONCAT(fName,lName) as fullname from customer
+
+5)CONCAT with +:it is used to add two string together using + operator
+select 'jinay' + 'shah' as fullname
+
+6)CONCAT_WS:it is used to add two string together with separator
+select CONCAT_WS(' ','jinay','shah') as fullname
+
+7)LEN:returns the length of a string
+select LEN('Jinay') as stringLength
+
+8)LEFT:Extracts mentioned number of characters from left side
+select LEFT('Jinay',2) as extractedCharacters
+
+9)LOWER:Converts string to lower case
+select LOWER('JINAYSHAH') as lowerCase
+
+10)LTRIM:removes leading space form left side
+select LTRIM('   Jinay    Shah') as leftTrimmed
+
+11)PATINDEX:returns position of pattern in a string
+select PATINDEX('%ina%','jinay') as indexOfPattern
+
+12)QUOTENAME:returns same string with bracket delimiters
+select QUOTENAME('jinay shah') as quotename
+
+13)REPLACE:replaces all the occurance of a substring with new substring
+select REPLACE('jinay','j','v') as replacedString
+
+14)REPLICATE:repeats the specified string given number of times
+select REPLICATE('jinay',3) as replicatedString
+
+15)REVERSE:reverse the mentioned string
+select REVERSE('jinay') as reversedString
+
+16)STUFF:deletes a part of a string and then inserts another part into the string starting ata a specified position
+select STUFF('jinay shah',1,5,'yanij') as stuffedString
+
+17)SUBSTRING:extracts some characters from a string
+select SUBSTRING('jinay shah',1,5 as extractedString
+
+18)TRIM:removes leading and trailing spaces from the string
+select TRIM('     jinay shah    ') as trimmedString

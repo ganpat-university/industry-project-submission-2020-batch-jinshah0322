@@ -1,0 +1,46 @@
+Math Functions:-
+
+1)ABS:Returns the absolute value of a number
+SELECT ABS(-10) AS AbsoluteValue
+
+2)ROUND:Rounds a number to the nearest integer or to the specified number of decimal places
+SELECT ROUND(4.567, 2) AS RoundedValue
+
+3)CEILING:Returns the smallest integer greater than or equal to a number
+SELECT CEILING(4.25) AS CeilValue
+
+4)FLOOR:Returns the largest integer less than or equal to a number
+SELECT FLOOR(4.75) AS FloorValue
+
+5)POWER:Returns the value of a number raised to the power of another number
+SELECT POWER(2, 3) AS PowerValue
+
+6)SQRT:Returns the square root of a number
+SELECT SQRT(25) AS SquareRootValue
+
+7)EXP:Returns the value of 'e' raised to the power of a specified number
+SELECT EXP(2) AS ExponentialValue
+
+8)COUNT:Returns the number of records returned by a select query
+SELECT COUNT(*) FROM ASSIGNMENTTABLE
+
+9)MAX:Returns the maximum value in a set of values
+SELECT MAX(salary) AS LargestSalary FROM Salary
+
+10)SUM:Calculates the sum of a set of values
+SELECT SUM(taska) AS TotalTasks FROM tasksTable
+
+11)LOG:Returns the natural logarithm of a number
+SELECT LOG(10) AS LogarithmValue
+
+12)SIN:Returns the sine of an angle specified in radians
+SELECT SIN(0.5) AS SineValue
+
+13)ASIN:Returns the arcsine of a number, in radians
+SELECT ASIN(0.5) AS ArcsineValue
+
+14)RAND:Returns a random number
+SELECT RAND()
+
+15)PI:Returns the value of PI
+SELECT PI()

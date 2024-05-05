@@ -1,0 +1,25 @@
+Advanced Functions:-
+
+1)CAST:Converts a value (of any type) into a specified datatype
+SELECT CAST(25.65 AS int)
+
+2)CONVERT:Converts a value (of any type) into a specified datatype
+SELECT CONVERT(int,25.65)
+
+3)CURRENT_USER:Returns the name of the current user in the SQL Server database
+SELECT CURRENT_USER
+
+4)COALESCE:Returns the first non-null value in a list
+SELECT COALESCE(NULL, NULL, NULL, 'W3Schools.com', NULL, 'Example.com');
+
+5)IIF:Returns a value if a condition is TRUE, or another value if a condition is FALSE
+SELECT IIF(500<1000, 'YES', 'NO')
+
+6)ISNULL:Return a specified value if the expression is NULL, otherwise return the expression
+SELECT ISNULL(NULL, 'W3Schools.com')
+
+7)ISNUMERIC:Tests whether an expression is numeric
+SELECT ISNUMERIC(45)
+
+8)NULLIF:Returns NULL if two expressions are equal
+SELECT NULLIF(25, 25)

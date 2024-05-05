@@ -1,0 +1,4 @@
+-In Object Explorer, right-click on your server and click Properties.
+-In the left panel on that Properties page, click the Database settings tab.
+-In Database default locations, view the current default locations for new data files and new log files. To change a default location, enter a new default pathname in the Data or Log field, or click the browse button to find and select a pathname.
+-After doint above steps restart the connection
