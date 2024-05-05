@@ -1,0 +1,55 @@
+﻿@model string
+@using Newtonsoft.Json;
+
+@{
+    dynamic employee = JsonConvert.DeserializeObject(Model);
+    string createMessage = TempData["Edit"] as string;
+}
+
+<h1 class="mb-4 text-center">Edit Order</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <div class="card shadow">
+                <div class="card-body">
+                    @if (!string.IsNullOrEmpty(createMessage))
+                    {
+                        <div class="alert alert-danger mb-4" role="alert">
+                            @createMessage
+                        </div>
+                    }
+                    <form method="post">
+                        <div class="mb-3">
+                            <label for="customerId" class="form-label">Customer Id</label>
+                            <input type="number" class="form-control" id="customerId" name="customerId" value="@employee.customerId" readonly>
+                        </div>
+                        <div class="mb-3">
+                            <label for="orderDate" class="form-label">Order Date</label>
+                            <input type="date" class="form-control" id="orderDate" name="orderDate" value="@employee.orderDate?.ToString("yyyy-MM-dd")">
+                        </div>
+                        <div class="mb-3">
+                            <label for="totalAmount" class="form-label">Total Amount</label>
+                            <input type="number" class="form-control" id="totalAmount" name="totalAmount" value="@employee.totalAmount">
+                        </div>
+                        <div class="mb-3">
+                            <label for="status" class="form-label">Status</label>
+                            <select class="form-select" id="status" name="status">
+                                <option value="Pending" selected="@(employee.status == "Pending" ? "selected" : null)">Pending</option>
+                                <option value="Dispatched" selected="@(employee.status == "Dispatched" ? "selected" : null)">Dispatched</option>
+                                <option value="Delivered" selected="@(employee.status == "Delivered" ? "selected" : null)">Delivered</option>
+                            </select>
+                        </div>
+
+    
+
+                        <div class="mt-4">
+                            <button type="submit" class="btn btn-primary me-2">Save</button>
+                            <a href="@Url.Action("Order", "Customer",new{id=employee.customerId})" class="btn btn-secondary">Cancel</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

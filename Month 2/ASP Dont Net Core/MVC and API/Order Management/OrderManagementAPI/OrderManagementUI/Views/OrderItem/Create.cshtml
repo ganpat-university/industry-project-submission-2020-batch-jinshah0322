@@ -1,0 +1,51 @@
+﻿@{
+    string createMessage = TempData["Create"] as string;
+    string item = TempData["Item"] as string;
+}
+
+<h1 class="mb-4 text-center">Create OrderItem</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <div class="card shadow">
+                <div class="card-body">
+                    @if (!string.IsNullOrEmpty(createMessage))
+                    {
+                        <div class="alert alert-danger mb-4" role="alert">
+                            @createMessage
+                        </div>
+                    }
+
+                    @if (!string.IsNullOrEmpty(item))
+                    {
+                        <div class="alert alert-success mb-4" role="alert">
+                            @item
+                        </div>
+                    }
+                    <form method="post" action="@Url.Action("Create", "OrderItem",new { customerId = TempData["CustomerId"],orderId=TempData["OrderId"]})">
+                        <div class="mb-3">
+                            <label for="orderId" class="form-label">order Id</label>
+                            <input type="number" class="form-control" id="orderId" name="orderId" value="@TempData["OrderId"]" readonly>
+                        </div>
+                        <div class="mb-3">
+                            <label for="productId" class="form-label">Product Id</label>
+                            <input type="number" class="form-control" id="productId" name="productId">
+                        </div>
+                        <div class="mb-3">
+                            <label for="quantity" class="form-label">Quantity</label>
+                            <input type="number" class="form-control" id="quantity" name="quantity">
+                        </div>
+                        <div class="mb-3">
+                            <label for="unitPrice" class="form-label">Unit Price</label>
+                            <input type="number" class="form-control" id="unitPrice" name="unitPrice">
+                        </div>
+                        <div class="mt-4">
+                            <button type="submit" class="btn btn-primary">Save</button>
+                            <a href="@Url.Action("Order", "Customer" ,new{id=TempData["CustomerId"]})" class="btn btn-secondary">Cancel</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

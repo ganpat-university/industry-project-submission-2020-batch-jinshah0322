@@ -1,0 +1,45 @@
+﻿@model string
+@using Newtonsoft.Json;
+
+@{
+    dynamic employee = JsonConvert.DeserializeObject(Model);
+}
+
+<h1 class="mb-4 text-center">Edit Employee</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <div class="card shadow">
+                <div class="card-body">
+                    <form method="post">
+                        <div class="mb-3">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="firstName" name="firstName" value="@employee.firstName">
+                        </div>
+                        <div class="mb-3">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" name="lastName" value="@employee.lastName">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" value="@employee.email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="salary" class="form-label">Salary</label>
+                            <input type="number" class="form-control" id="salary" name="salary" value="@employee.salary">
+                        </div>
+                        <div class="mb-3">
+                            <label for="hireDate" class="form-label">Hire Date</label>
+                            <input type="date" class="form-control" id="hireDate" name="hireDate" value="@employee.hireDate">
+                        </div>
+                        <div class="mt-4">
+                            <button type="submit" class="btn btn-primary me-2">Save</button>
+                            <a href="@Url.Action("Index", "Employee")" class="btn btn-secondary">Cancel</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

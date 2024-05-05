@@ -1,0 +1,40 @@
+﻿@model string
+@using Newtonsoft.Json;
+
+@{
+    dynamic product = JsonConvert.DeserializeObject(Model);
+}
+
+<h1 class="mb-4 text-center">product Details</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <div class="card shadow">
+                <div class="card-body text-left">
+                    <div class="mb-3">
+                        <strong>Name:</strong>
+                        <span class="ms-2">@product.name</span>
+                    </div>
+                   
+                    <div class="mb-3">
+                        <strong>Description:</strong>
+                        <span class="ms-2">@product.description</span>
+                    </div>
+                    <div class="mb-3">
+                        <strong>Price:</strong>
+                        <span class="ms-2">@product.price</span>
+                    </div>
+                    <div class="mb-3">
+                        <strong>Stck Quantity:</strong>
+                        <span class="ms-2">@product.stockQuantity</span>
+                    </div>
+                    <div class="mt-4">
+                        <a href="@Url.Action("Index", "Product")" class="btn btn-primary me-2">Home</a>
+                        <a href="@Url.Action("Edit", "Product", new { id = @product.productId })" class="btn btn-danger">Edit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+﻿@model string
+@using Newtonsoft.Json;
+
+@{
+    dynamic order = JsonConvert.DeserializeObject(Model);
+    int amount = Convert.ToInt16(TempData["totalAmount"]);
+}
+
+<h1 class="mb-4 text-center">Order Details</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <div class="card shadow">
+                <div class="card-body text-left">
+                    <div class="mb-3">
+                        <strong>CustomerId:</strong>
+                        <span class="ms-2">@order.customerId</span>
+                    </div>
+
+                    <div class="mb-3">
+                        <strong>Order Date:</strong>
+                        <span class="ms-2">@order.orderDate</span>
+                    </div>  
+                    <div class="mb-3">
+                        <strong>Total Amount:</strong>
+                        <span class="ms-2">@amount</span>
+                    </div>
+                    <div class="mb-3">
+                        <strong>Status:</strong>
+                        <span class="ms-2">@order.status</span>
+                    </div>
+                    <div class="mt-4">
+                        <a href="@Url.Action("Order", "Customer" , new {id=order.customerId})" class="btn btn-primary me-2">Home</a>
+                        <a href="@Url.Action("Edit", "Order", new { id = @order.orderId })" class="btn btn-danger me-2">Edit</a>
+                        <a href="@Url.Action("Index", "OrderItem", new { id = @order.orderId })" class="btn btn-info">View OrderItems</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

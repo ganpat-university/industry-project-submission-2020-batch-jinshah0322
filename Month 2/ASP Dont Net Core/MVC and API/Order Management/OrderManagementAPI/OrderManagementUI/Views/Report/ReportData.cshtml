@@ -1,0 +1,30 @@
+﻿@model string
+@using Newtonsoft.Json;
+
+<h1 class="text-center">Report Data</h1>
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Order ID</th>
+                <th>Customer ID</th>
+                <th>Order Date</th>
+                <th>Total Amount</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var report in JsonConvert.DeserializeObject<dynamic>(Model))
+            {
+                <tr>
+                    <td>@report.orderId</td>
+                    <td>@report.customerId</td>
+                    <td>@report.orderDate</td>
+                    <td>@report.totalAmount</td>
+                    <td>@report.status</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

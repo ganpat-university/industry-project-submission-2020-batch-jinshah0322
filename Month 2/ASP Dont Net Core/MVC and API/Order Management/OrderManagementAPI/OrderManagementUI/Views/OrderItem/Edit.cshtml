@@ -1,0 +1,48 @@
+﻿@model string
+@using Newtonsoft.Json;
+
+@{
+    dynamic orderItem = JsonConvert.DeserializeObject(Model);
+    string createMessage = TempData["Edit"] as string;
+}
+
+<h1 class="mb-4 text-center">Edit OrderItem</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <div class="card shadow">
+                <div class="card-body">
+                    @if (!string.IsNullOrEmpty(createMessage))
+                    {
+                        <div class="alert alert-danger mb-4" role="alert">
+                            @createMessage
+                        </div>
+                    }
+                    <form method="post">
+                        <div class="mb-3">
+                            <label for="orderId" class="form-label">Order Id</label>
+                            <input type="number" class="form-control" id="orderId" name="orderId" value="@orderItem.orderId" readonly>
+                        </div>
+                        <div class="mb-3">
+                            <label for="productId" class="form-label">Product Id</label>
+                            <input type="number" class="form-control" id="productId" name="productId" value="@orderItem.productId" readonly>
+                        </div>
+                        <div class="mb-3">
+                            <label for="quantity" class="form-label">Quantity</label>
+                            <input type="number" class="form-control" id="quantity" name="quantity" value="@orderItem.quantity">
+                        </div>
+                        <div class="mb-3">
+                            <label for="unitPrice" class="form-label">Unit Price</label>
+                            <input type="number" class="form-control" id="unitPrice" name="unitPrice" value="@orderItem.unitPrice">
+                        </div>
+                        <div class="mt-4">
+                            <button type="submit" class="btn btn-primary me-2">Save</button>
+                            <a href="@Url.Action("Index", "OrderItem",new {id=@orderItem.orderId})" class="btn btn-secondary">Cancel</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

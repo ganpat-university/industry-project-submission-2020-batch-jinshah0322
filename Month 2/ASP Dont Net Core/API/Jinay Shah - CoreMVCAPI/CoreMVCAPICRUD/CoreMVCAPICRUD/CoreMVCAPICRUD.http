@@ -1,0 +1,6 @@
+@CoreMVCAPICRUD_HostAddress = http://localhost:5288
+
+GET {{CoreMVCAPICRUD_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

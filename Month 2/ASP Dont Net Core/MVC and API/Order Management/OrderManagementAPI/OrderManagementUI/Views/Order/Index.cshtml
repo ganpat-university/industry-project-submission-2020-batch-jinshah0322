@@ -1,0 +1,47 @@
+﻿@model string
+@using Newtonsoft.Json;
+@{
+    int amount = Convert.ToInt16(TempData["totalAmount"]);
+}
+
+<h1 class="text-center">Orders</h1>
+<a href="@Url.Action("Create", "Order")" class="btn btn-primary">Add New</a>
+<div class="table-responsive">
+    <table class="table table-striped table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th hidden>Order ID</th>
+                <th>Customer ID</th>
+                <th>Order Date</th>
+                <th>Total Amount</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in JsonConvert.DeserializeObject<dynamic>(Model))
+            {
+                <tr>
+                    <td hidden>@item.orderId</td>
+                    <td>@item.customerId</td>
+                    <td>@item.orderDate</td>
+                    <td>@amount</td>
+                    <td>@item.status</td>
+                    <td>
+                        <a href="@Url.Action("Details", "order", new { id = item.orderId })" class="btn btn-primary">Details</a>
+                        <a href="@Url.Action("Edit", "order", new { id = item.orderId })" class="btn btn-success">Edit</a>
+                        <button onclick="confirmDelete('@item.orderId')" class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<script>
+    function confirmDelete(orderId) {
+        if (confirm("Are you sure you want to delete this Order?")) {
+            window.location.href = '@Url.Action("Delete", "Order")' + '?id=' + orderId;
+        }
+    }
+</script>

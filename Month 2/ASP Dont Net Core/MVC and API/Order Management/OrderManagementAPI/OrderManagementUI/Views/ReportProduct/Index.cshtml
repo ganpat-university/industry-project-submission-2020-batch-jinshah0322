@@ -1,0 +1,21 @@
+﻿<h1 class="text-center">Filter Products by Stock Quantity</h1>
+
+<div class="container">
+    <form asp-controller="Product" asp-action="Index" method="post">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="minStockQuantity">Minimum Stock Quantity:</label>
+                    <input type="number" class="form-control" id="minStockQuantity" name="minStockQuantity" required />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="maxStockQuantity">Maximum Stock Quantity:</label>
+                    <input type="number" class="form-control" id="maxStockQuantity" name="maxStockQuantity" required />
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Filter Products</button>
+    </form>
+</div>

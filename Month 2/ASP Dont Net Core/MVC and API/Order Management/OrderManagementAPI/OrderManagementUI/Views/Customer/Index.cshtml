@@ -1,0 +1,43 @@
+﻿@model string
+@using Newtonsoft.Json;
+
+<h1 class="text-center">Customers</h1>
+<a href="@Url.Action("Create", "Customer")" class="btn btn-primary">Add New</a>
+<div class="table-responsive">
+    <table class="table table-striped table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th hidden>Customers ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in JsonConvert.DeserializeObject<dynamic>(Model))
+            {
+                <tr>
+                    <td hidden>@item.customerId</td>
+                    <td>@item.name</td>
+                    <td>@item.email</td>
+                    <td>@item.address</td>
+                    <td>
+                        <a href="@Url.Action("Details", "Customer", new { id = item.customerId })" class="btn btn-primary">Details</a>
+                        <a href="@Url.Action("Edit", "Customer", new { id = item.customerId })" class="btn btn-success">Edit</a>
+                        <button onclick="confirmDelete('@item.customerId')" class="btn btn-danger">Delete</button>
+                        <a href="@Url.Action("Order", "Customer", new { id = item.customerId })" class="btn btn-info">Manage Orders</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<script>
+    function confirmDelete(customerId) {
+        if (confirm("Are you sure you want to delete this Customers?")) {
+            window.location.href = '@Url.Action("Delete", "Customer")' + '?id=' + customerId;
+        }
+    }
+</script>

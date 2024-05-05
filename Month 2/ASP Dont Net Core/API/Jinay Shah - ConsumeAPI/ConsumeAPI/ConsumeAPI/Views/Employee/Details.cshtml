@@ -1,0 +1,43 @@
+﻿@model string
+@using Newtonsoft.Json;
+
+@{
+    dynamic employee = JsonConvert.DeserializeObject(Model);
+}
+
+<h1 class="mb-4 text-center">Employee Details</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <div class="card shadow">
+                <div class="card-body text-left">
+                    <div class="mb-3">
+                        <strong>First Name:</strong>
+                        <span class="ms-2">@employee.firstName</span>
+                    </div>
+                    <div class="mb-3">
+                        <strong>Last Name:</strong>
+                        <span class="ms-2">@employee.lastName</span>
+                    </div>
+                    <div class="mb-3">
+                        <strong>Email:</strong>
+                        <span class="ms-2">@employee.email</span>
+                    </div>
+                    <div class="mb-3">
+                        <strong>Salary:</strong>
+                        <span class="ms-2">@employee.salary</span>
+                    </div>
+                    <div class="mb-3">
+                        <strong>Hire Date:</strong>
+                        <span class="ms-2">@employee.hireDate</span>
+                    </div>
+                    <div class="mt-4">
+                        <a href="@Url.Action("Index", "Employee")" class="btn btn-primary me-2">Home</a>
+                        <a href="@Url.Action("Edit", "Employee", new { id = @employee.employeeId })" class="btn btn-danger">Edit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+2024-02-26 14:50:29.5375 Info Registered target NLog.Targets.DatabaseTarget(Name=database)
+2024-02-26 14:50:29.5675 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-26 14:50:29.5834 Info Validating config: TargetNames=database, ConfigItems=32, FilePath=C:\Users\BAPS\Desktop\ASP.NET Core\API\Jinay Shah - LogsAPI\LogsAPI\LogsAPI\bin\Debug\net8.0\NLog.config
+2024-02-26 14:50:29.6124 Info Configuration initialized.
+2024-02-26 14:50:29.7652 Info Validating config: TargetNames=database, ConfigItems=32, FilePath=C:\Users\BAPS\Desktop\ASP.NET Core\API\Jinay Shah - LogsAPI\LogsAPI\LogsAPI\bin\Debug\net8.0\NLog.config
+2024-02-26 14:50:29.7799 Warn Logger: Microsoft.Hosting.Lifetime configured with duplicate output to target: DatabaseTarget(Name=database). LoggingRule with NamePattern='Microsoft.Hosting.Lifetime' and Level=Info has been skipped.
+2024-02-26 14:50:40.6541 Info Registered target NLog.Targets.DatabaseTarget(Name=database)
+2024-02-26 14:50:40.6935 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-26 14:50:40.7406 Info Validating config: TargetNames=database, ConfigItems=32, FilePath=C:\Users\BAPS\Desktop\ASP.NET Core\API\Jinay Shah - LogsAPI\LogsAPI\LogsAPI\bin\Debug\net8.0\NLog.config
+2024-02-26 14:50:40.7919 Info Configuration initialized.
+2024-02-26 14:50:41.2448 Info Validating config: TargetNames=database, ConfigItems=32, FilePath=C:\Users\BAPS\Desktop\ASP.NET Core\API\Jinay Shah - LogsAPI\LogsAPI\LogsAPI\bin\Debug\net8.0\NLog.config
+2024-02-26 14:50:41.2618 Warn Logger: Microsoft.Hosting.Lifetime configured with duplicate output to target: DatabaseTarget(Name=database). LoggingRule with NamePattern='Microsoft.Hosting.Lifetime' and Level=Info has been skipped.
+2024-02-26 14:51:08.6078 Info Registered target NLog.Targets.DatabaseTarget(Name=database)
+2024-02-26 14:51:08.6256 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-26 14:51:08.6408 Info Validating config: TargetNames=database, ConfigItems=32, FilePath=C:\Users\BAPS\Desktop\ASP.NET Core\API\Jinay Shah - LogsAPI\LogsAPI\LogsAPI\bin\Debug\net8.0\NLog.config
+2024-02-26 14:51:08.6612 Info Configuration initialized.
+2024-02-26 14:51:08.7706 Info Validating config: TargetNames=database, ConfigItems=32, FilePath=C:\Users\BAPS\Desktop\ASP.NET Core\API\Jinay Shah - LogsAPI\LogsAPI\LogsAPI\bin\Debug\net8.0\NLog.config
+2024-02-26 14:51:08.7846 Warn Logger: Microsoft.Hosting.Lifetime configured with duplicate output to target: DatabaseTarget(Name=database). LoggingRule with NamePattern='Microsoft.Hosting.Lifetime' and Level=Info has been skipped.
+2024-02-26 14:51:28.4401 Info Registered target NLog.Targets.DatabaseTarget(Name=database)
+2024-02-26 14:51:28.4824 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-26 14:51:28.5288 Info Validating config: TargetNames=database, ConfigItems=32, FilePath=C:\Users\BAPS\Desktop\ASP.NET Core\API\Jinay Shah - LogsAPI\LogsAPI\LogsAPI\bin\Debug\net8.0\NLog.config
+2024-02-26 14:51:28.5926 Info Configuration initialized.
+2024-02-26 14:51:29.1614 Info Validating config: TargetNames=database, ConfigItems=32, FilePath=C:\Users\BAPS\Desktop\ASP.NET Core\API\Jinay Shah - LogsAPI\LogsAPI\LogsAPI\bin\Debug\net8.0\NLog.config
+2024-02-26 14:51:29.1766 Warn Logger: Microsoft.Hosting.Lifetime configured with duplicate output to target: DatabaseTarget(Name=database). LoggingRule with NamePattern='Microsoft.Hosting.Lifetime' and Level=Info has been skipped.

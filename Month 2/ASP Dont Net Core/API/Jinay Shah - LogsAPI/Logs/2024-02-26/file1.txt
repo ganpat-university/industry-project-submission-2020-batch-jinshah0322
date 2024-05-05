@@ -1,0 +1,941 @@
+2024-02-26 15:31:15.8933|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2024-02-26 15:31:33.4285|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2024-02-26 15:31:33.7419|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7278
+2024-02-26 15:31:33.7474|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5016
+2024-02-26 15:31:33.7474|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly LogsAPI
+2024-02-26 15:31:33.7474|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-02-26 15:31:33.7474|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-02-26 15:31:33.7665|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-02-26 15:31:33.7665|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-02-26 15:31:33.7665|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\BAPS\Desktop\ASP.NET Core\API\Jinay Shah - LogsAPI\LogsAPI\LogsAPI
+2024-02-26 15:31:33.7811|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2024-02-26 15:31:33.9666|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1MM7KT1NKF" accepted.
+2024-02-26 15:31:33.9666|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1MM7KT1NKF" started.
+2024-02-26 15:31:33.9931|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN1MM7KT1NKF" received FIN.
+2024-02-26 15:31:34.0047|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection.|System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-02-26 15:31:34.0144|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1MM7KT1NKF" stopped.
+2024-02-26 15:31:34.0144|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN1MM7KT1NKF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-26 15:31:34.3265|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1MM7KT1NKG" accepted.
+2024-02-26 15:31:34.3265|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1MM7KT1NKG" started.
+2024-02-26 15:31:34.3792|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HN1MM7KT1NKG established using the following protocol: Tls13
+2024-02-26 15:31:34.4194|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" sending SETTINGS frame for stream ID 0 with length 24 and flags NONE.
+2024-02-26 15:31:34.4194|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" sending WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0.
+2024-02-26 15:31:34.4403|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" received SETTINGS frame for stream ID 0 with length 24 and flags NONE.
+2024-02-26 15:31:34.4403|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" sending SETTINGS frame for stream ID 0 with length 0 and flags ACK.
+2024-02-26 15:31:34.4540|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0.
+2024-02-26 15:31:34.4540|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" received HEADERS frame for stream ID 1 with length 432 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-02-26 15:31:34.4840|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" received SETTINGS frame for stream ID 0 with length 0 and flags ACK.
+2024-02-26 15:31:34.5160|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7278/swagger/index.html - - -
+2024-02-26 15:31:34.7226|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2024-02-26 15:31:34.7226|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2024-02-26 15:31:34.7475|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html'
+2024-02-26 15:31:34.7475|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2024-02-26 15:31:34.8220|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection.
+2024-02-26 15:31:34.8316|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" sending HEADERS frame for stream ID 1 with length 66 and flags END_HEADERS.
+2024-02-26 15:31:34.8316|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" sending DATA frame for stream ID 1 with length 4096 and flags NONE.
+2024-02-26 15:31:34.8417|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" sending DATA frame for stream ID 1 with length 1068 and flags NONE.
+2024-02-26 15:31:34.8417|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection.
+2024-02-26 15:31:34.8575|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" sending DATA frame for stream ID 1 with length 0 and flags END_STREAM.
+2024-02-26 15:31:34.8575|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7278/swagger/index.html - 200 - text/html;charset=utf-8 355.2475ms
+2024-02-26 15:31:34.8904|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" received HEADERS frame for stream ID 3 with length 110 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-02-26 15:31:34.8904|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" received HEADERS frame for stream ID 5 with length 58 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-02-26 15:31:34.8904|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7278/_framework/aspnetcore-browser-refresh.js - - -
+2024-02-26 15:31:34.9078|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7278/_vs/browserLink - - -
+2024-02-26 15:31:34.9078|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" sending HEADERS frame for stream ID 3 with length 60 and flags END_HEADERS.
+2024-02-26 15:31:34.9231|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" sending DATA frame for stream ID 3 with length 13750 and flags NONE.
+2024-02-26 15:31:34.9932|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" sending DATA frame for stream ID 3 with length 0 and flags END_STREAM.
+2024-02-26 15:31:34.9932|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7278/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript;+charset=utf-8 94.3829ms
+2024-02-26 15:31:35.0007|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" sending HEADERS frame for stream ID 5 with length 119 and flags END_HEADERS.
+2024-02-26 15:31:35.0168|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" sending DATA frame for stream ID 5 with length 9986 and flags NONE.
+2024-02-26 15:31:35.0168|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 15:31:35.0321|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 15:31:35.0321|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 15:31:35.0477|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 15:31:35.0477|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 15:31:35.0636|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 15:31:35.0636|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 15:31:35.0810|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 15:31:35.0810|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 15:31:35.0967|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 15:31:35.0967|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 15:31:35.1121|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 15:31:35.1121|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 15:31:35.1277|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 15:31:35.1277|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" sending DATA frame for stream ID 5 with length 160 and flags NONE.
+2024-02-26 15:31:35.1277|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7278/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 228.4865ms
+2024-02-26 15:31:35.1431|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" sending DATA frame for stream ID 5 with length 0 and flags END_STREAM.
+2024-02-26 15:31:35.1934|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" received HEADERS frame for stream ID 7 with length 67 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-02-26 15:31:35.2050|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7278/swagger/v1/swagger.json - - -
+2024-02-26 15:31:35.2050|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2024-02-26 15:31:35.2170|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json'
+2024-02-26 15:31:35.2393|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2024-02-26 15:31:35.3144|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" sending HEADERS frame for stream ID 7 with length 35 and flags END_HEADERS.
+2024-02-26 15:31:35.3144|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" sending DATA frame for stream ID 7 with length 4704 and flags NONE.
+2024-02-26 15:31:35.3306|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" sending DATA frame for stream ID 7 with length 0 and flags END_STREAM.
+2024-02-26 15:31:35.3306|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7278/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 125.9274ms
+2024-02-26 15:31:38.7247|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" received HEADERS frame for stream ID 9 with length 34 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-02-26 15:31:55.7421|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7278/api/EmployeeAPI - - -
+2024-02-26 15:31:55.7504|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2024-02-26 15:31:55.7504|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/EmployeeAPI'
+2024-02-26 15:31:55.7719|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI)' with route pattern 'api/EmployeeAPI' is valid for the request path '/api/EmployeeAPI'
+2024-02-26 15:31:55.7809|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI)'
+2024-02-26 15:31:55.7809|TRACE|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|The endpoint does not specify the IRequestSizeLimitMetadata.
+2024-02-26 15:31:55.7982|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-02-26 15:31:55.7982|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI)'
+2024-02-26 15:31:55.8285|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllEmployees", controller = "EmployeeAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllEmployees() on controller LogsAPI.Controllers.EmployeeAPIController (LogsAPI).
+2024-02-26 15:31:55.8285|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2024-02-26 15:31:55.8457|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2024-02-26 15:31:55.8457|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-02-26 15:31:55.8606|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2024-02-26 15:31:55.8606|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-02-26 15:31:55.8762|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller LogsAPI.Controllers.EmployeeAPIController (LogsAPI)
+2024-02-26 15:31:56.0658|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-02-26 15:31:56.0916|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller LogsAPI.Controllers.EmployeeAPIController (LogsAPI)
+2024-02-26 15:31:56.0916|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 15:31:56.1098|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 15:31:56.1098|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 15:31:56.1255|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 15:31:56.1387|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI) - Validation state: Valid
+2024-02-26 15:31:56.1387|INFO|LogsAPI.Controllers.EmployeeAPIController|All employee are logged.
+2024-02-26 15:31:56.5086|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 8.0.2 initialized 'CoreMvcContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.2' with options: None
+2024-02-26 15:31:56.5341|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<Employee>()'
+2024-02-26 15:31:56.6673|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Employee>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Employee.EmployeeId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Employee.Email (string) Required MaxLength(100) ANSI, 1], [Property: Employee.FirstName (string) Required MaxLength(50) ANSI, 2], [Property: Employee.HireDate (DateOnly) Required, 3], [Property: Employee.LastName (string) Required MaxLength(50) ANSI, 4], [Property: Employee.Salary (decimal) Required, 5] }
+        SELECT e.EmployeeID, e.Email, e.FirstName, e.HireDate, e.LastName, e.Salary
+        FROM Employee AS e), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Employee>, 
+    DAL.DataAccess.CoreMvcContext, 
+    False, 
+    False, 
+    True
+)'
+2024-02-26 15:31:56.6963|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection.
+2024-02-26 15:31:56.7090|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (10ms).
+2024-02-26 15:31:56.7197|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'CoreMVC' on server 'DESKTOP-2JN7IG8\SQLEXPRESS'.
+2024-02-26 15:31:56.7744|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'CoreMVC' on server 'DESKTOP-2JN7IG8\SQLEXPRESS'.
+2024-02-26 15:31:56.7863|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2024-02-26 15:31:56.8009|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (12ms).
+2024-02-26 15:31:56.8123|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (26ms).
+2024-02-26 15:31:56.8264|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[EmployeeID], [e].[Email], [e].[FirstName], [e].[HireDate], [e].[LastName], [e].[Salary]
+FROM [Employee] AS [e]
+2024-02-26 15:31:56.8625|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (37ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[EmployeeID], [e].[Email], [e].[FirstName], [e].[HireDate], [e].[LastName], [e].[Salary]
+FROM [Employee] AS [e]
+2024-02-26 15:31:56.8981|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 15:31:56.9255|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 15:31:56.9255|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 15:31:56.9359|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 15:31:56.9543|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 15:31:56.9543|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 15:31:56.9716|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 15:31:56.9716|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 15:31:56.9903|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'CoreMVC' on server 'DESKTOP-2JN7IG8\SQLEXPRESS'.
+2024-02-26 15:31:57.0032|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'CoreMVC' on server 'DESKTOP-2JN7IG8\SQLEXPRESS' is being disposed after spending 127ms reading results.
+2024-02-26 15:31:57.0166|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'CoreMVC' on server 'DESKTOP-2JN7IG8\SQLEXPRESS'.
+2024-02-26 15:31:57.0317|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'CoreMVC' on server 'DESKTOP-2JN7IG8\SQLEXPRESS' (15ms).
+2024-02-26 15:31:57.0462|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 894.948ms.
+2024-02-26 15:31:57.0462|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 15:31:57.0668|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 15:31:57.0765|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 15:31:57.0765|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 15:31:57.0958|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 15:31:57.0958|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 15:31:57.1141|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-02-26 15:31:57.1247|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-02-26 15:31:57.1247|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2024-02-26 15:31:57.1449|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-02-26 15:31:57.1449|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result.
+2024-02-26 15:31:57.1550|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-02-26 15:31:57.1772|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DAL.DataAccess.Employee, DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-26 15:31:57.1983|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" sending HEADERS frame for stream ID 9 with length 66 and flags END_HEADERS.
+2024-02-26 15:31:57.1983|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-02-26 15:31:57.2075|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" sending DATA frame for stream ID 9 with length 1044 and flags NONE.
+2024-02-26 15:31:57.2190|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 15:31:57.2190|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0.
+2024-02-26 15:31:57.2384|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 15:31:57.2384|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" received WINDOW_UPDATE frame for stream ID 9 with length 4 and flags 0x0.
+2024-02-26 15:31:57.2481|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI) in 1382.891ms
+2024-02-26 15:31:57.2680|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI)'
+2024-02-26 15:31:57.2852|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM7KT1NKG" sending DATA frame for stream ID 9 with length 0 and flags END_STREAM.
+2024-02-26 15:31:57.2852|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'CoreMvcContext' disposed.
+2024-02-26 15:31:57.3054|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'CoreMVC' on server 'DESKTOP-2JN7IG8\SQLEXPRESS'.
+2024-02-26 15:31:57.3167|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database '' on server '' (11ms).
+2024-02-26 15:31:57.3277|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7278/api/EmployeeAPI - 200 - application/json;+charset=utf-8 1585.9734ms
+2024-02-26 15:32:28.8702|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2024-02-26 15:32:46.1015|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2024-02-26 15:32:46.2820|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7278
+2024-02-26 15:32:46.2820|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5016
+2024-02-26 15:32:46.3001|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly LogsAPI
+2024-02-26 15:32:46.3001|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN1MM8AESS55" received FIN.
+2024-02-26 15:32:46.3001|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-02-26 15:32:46.3190|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1MM8AESS55" accepted.
+2024-02-26 15:32:46.3276|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-02-26 15:32:46.3276|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1MM8AESS55" started.
+2024-02-26 15:32:46.3492|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-02-26 15:32:46.3606|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-02-26 15:32:46.3606|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection.|System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-02-26 15:32:46.3826|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\BAPS\Desktop\ASP.NET Core\API\Jinay Shah - LogsAPI\LogsAPI\LogsAPI
+2024-02-26 15:32:46.3979|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1MM8AESS55" stopped.
+2024-02-26 15:32:46.4122|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2024-02-26 15:32:46.4201|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN1MM8AESS55" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-26 15:32:46.4201|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1MM8AESS56" accepted.
+2024-02-26 15:32:46.4535|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1MM8AESS56" started.
+2024-02-26 15:32:46.4950|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HN1MM8AESS56 established using the following protocol: Tls13
+2024-02-26 15:32:46.5247|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" sending SETTINGS frame for stream ID 0 with length 24 and flags NONE.
+2024-02-26 15:32:46.5372|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" sending WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0.
+2024-02-26 15:32:46.5475|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" received SETTINGS frame for stream ID 0 with length 24 and flags NONE.
+2024-02-26 15:32:46.5475|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" sending SETTINGS frame for stream ID 0 with length 0 and flags ACK.
+2024-02-26 15:32:46.5682|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0.
+2024-02-26 15:32:46.5774|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" received HEADERS frame for stream ID 1 with length 432 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-02-26 15:32:46.5989|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" received SETTINGS frame for stream ID 0 with length 0 and flags ACK.
+2024-02-26 15:32:46.6140|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7278/swagger/index.html - - -
+2024-02-26 15:32:46.7052|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2024-02-26 15:32:46.7052|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2024-02-26 15:32:46.7371|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html'
+2024-02-26 15:32:46.7481|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2024-02-26 15:32:46.8140|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection.
+2024-02-26 15:32:46.8260|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" sending HEADERS frame for stream ID 1 with length 66 and flags END_HEADERS.
+2024-02-26 15:32:46.8260|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" sending DATA frame for stream ID 1 with length 4096 and flags NONE.
+2024-02-26 15:32:46.8485|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" sending DATA frame for stream ID 1 with length 987 and flags NONE.
+2024-02-26 15:32:46.8485|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection.
+2024-02-26 15:32:46.8619|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" sending DATA frame for stream ID 1 with length 81 and flags NONE.
+2024-02-26 15:32:46.8732|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7278/swagger/index.html - 200 - text/html;charset=utf-8 261.9132ms
+2024-02-26 15:32:46.8732|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" sending DATA frame for stream ID 1 with length 0 and flags END_STREAM.
+2024-02-26 15:32:46.8922|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" received HEADERS frame for stream ID 3 with length 116 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-02-26 15:32:46.9073|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" received HEADERS frame for stream ID 5 with length 52 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-02-26 15:32:46.9073|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7278/_vs/browserLink - - -
+2024-02-26 15:32:46.9291|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7278/_framework/aspnetcore-browser-refresh.js - - -
+2024-02-26 15:32:46.9386|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" sending HEADERS frame for stream ID 5 with length 60 and flags END_HEADERS.
+2024-02-26 15:32:46.9608|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" sending DATA frame for stream ID 5 with length 13750 and flags NONE.
+2024-02-26 15:32:46.9705|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" sending HEADERS frame for stream ID 3 with length 119 and flags END_HEADERS.
+2024-02-26 15:32:46.9705|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7278/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript;+charset=utf-8 41.9576ms
+2024-02-26 15:32:46.9705|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" sending DATA frame for stream ID 3 with length 9986 and flags NONE.
+2024-02-26 15:32:47.0004|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" sending DATA frame for stream ID 5 with length 0 and flags END_STREAM.
+2024-02-26 15:32:47.0004|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" sending DATA frame for stream ID 3 with length 10240 and flags NONE.
+2024-02-26 15:32:47.0211|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" sending DATA frame for stream ID 3 with length 10240 and flags NONE.
+2024-02-26 15:32:47.0315|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" sending DATA frame for stream ID 3 with length 10240 and flags NONE.
+2024-02-26 15:32:47.0315|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" sending DATA frame for stream ID 3 with length 10240 and flags NONE.
+2024-02-26 15:32:47.0514|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" sending DATA frame for stream ID 3 with length 10240 and flags NONE.
+2024-02-26 15:32:47.0614|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" sending DATA frame for stream ID 3 with length 10240 and flags NONE.
+2024-02-26 15:32:47.0614|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" sending DATA frame for stream ID 3 with length 10240 and flags NONE.
+2024-02-26 15:32:47.0808|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" sending DATA frame for stream ID 3 with length 10240 and flags NONE.
+2024-02-26 15:32:47.0808|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" sending DATA frame for stream ID 3 with length 10240 and flags NONE.
+2024-02-26 15:32:47.1004|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" sending DATA frame for stream ID 3 with length 10240 and flags NONE.
+2024-02-26 15:32:47.1109|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" sending DATA frame for stream ID 3 with length 10240 and flags NONE.
+2024-02-26 15:32:47.1109|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" sending DATA frame for stream ID 3 with length 10240 and flags NONE.
+2024-02-26 15:32:47.1317|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" sending DATA frame for stream ID 3 with length 10240 and flags NONE.
+2024-02-26 15:32:47.1423|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" sending DATA frame for stream ID 3 with length 10240 and flags NONE.
+2024-02-26 15:32:47.1423|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" sending DATA frame for stream ID 3 with length 160 and flags NONE.
+2024-02-26 15:32:47.1423|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7278/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 233.6394ms
+2024-02-26 15:32:47.1600|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" sending DATA frame for stream ID 3 with length 0 and flags END_STREAM.
+2024-02-26 15:32:47.2160|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" received HEADERS frame for stream ID 7 with length 67 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-02-26 15:32:47.2168|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7278/swagger/v1/swagger.json - - -
+2024-02-26 15:32:47.2364|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2024-02-26 15:32:47.2364|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json'
+2024-02-26 15:32:47.2551|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2024-02-26 15:32:47.3295|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" sending HEADERS frame for stream ID 7 with length 65 and flags END_HEADERS.
+2024-02-26 15:32:47.3295|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" sending DATA frame for stream ID 7 with length 4704 and flags NONE.
+2024-02-26 15:32:47.3478|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" sending DATA frame for stream ID 7 with length 0 and flags END_STREAM.
+2024-02-26 15:32:47.3478|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7278/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 121.5381ms
+2024-02-26 15:33:01.3689|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" received HEADERS frame for stream ID 9 with length 34 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-02-26 15:33:11.3755|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1MM8AESS57" accepted.
+2024-02-26 15:33:18.3585|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" received PING frame for stream ID 0 with length 8 and flags NONE.
+2024-02-26 15:33:11.3755|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN1MM8AESS56" received FIN.
+2024-02-26 15:33:18.3780|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" sending PING frame for stream ID 0 with length 8 and flags ACK.
+2024-02-26 15:33:18.3585|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1MM8AESS57" started.
+2024-02-26 15:33:18.3585|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7278/api/EmployeeAPI - - -
+2024-02-26 15:33:18.3884|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HN1MM8AESS57 established using the following protocol: Tls13
+2024-02-26 15:33:18.4100|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2024-02-26 15:33:18.4100|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS57" sending SETTINGS frame for stream ID 0 with length 24 and flags NONE.
+2024-02-26 15:33:18.4259|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/EmployeeAPI'
+2024-02-26 15:33:18.4259|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS57" sending WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0.
+2024-02-26 15:33:18.4416|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI)' with route pattern 'api/EmployeeAPI' is valid for the request path '/api/EmployeeAPI'
+2024-02-26 15:33:18.4416|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS57" received SETTINGS frame for stream ID 0 with length 24 and flags NONE.
+2024-02-26 15:33:18.4574|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI)'
+2024-02-26 15:33:18.4574|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS57" sending SETTINGS frame for stream ID 0 with length 0 and flags ACK.
+2024-02-26 15:33:18.4735|TRACE|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|The endpoint does not specify the IRequestSizeLimitMetadata.
+2024-02-26 15:33:18.4735|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS57" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0.
+2024-02-26 15:33:18.4901|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-02-26 15:33:18.4980|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS57" received HEADERS frame for stream ID 1 with length 356 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-02-26 15:33:18.4980|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI)'
+2024-02-26 15:33:18.5143|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS57" received SETTINGS frame for stream ID 0 with length 0 and flags ACK.
+2024-02-26 15:33:18.5143|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7278/api/EmployeeAPI - - -
+2024-02-26 15:33:18.5313|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllEmployees", controller = "EmployeeAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllEmployees() on controller LogsAPI.Controllers.EmployeeAPIController (LogsAPI).
+2024-02-26 15:33:18.5313|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2024-02-26 15:33:18.5477|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2024-02-26 15:33:18.5477|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/EmployeeAPI'
+2024-02-26 15:33:18.5662|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2024-02-26 15:33:18.5760|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI)' with route pattern 'api/EmployeeAPI' is valid for the request path '/api/EmployeeAPI'
+2024-02-26 15:33:18.5760|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-02-26 15:33:18.5935|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI)'
+2024-02-26 15:33:18.5935|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2024-02-26 15:33:18.6102|TRACE|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|The endpoint does not specify the IRequestSizeLimitMetadata.
+2024-02-26 15:33:18.6102|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-02-26 15:33:18.6267|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-02-26 15:33:18.6267|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller LogsAPI.Controllers.EmployeeAPIController (LogsAPI)
+2024-02-26 15:33:18.6497|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI)'
+2024-02-26 15:33:18.3884|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS56" is closed. The last processed stream ID was 9.
+2024-02-26 15:33:18.6726|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllEmployees", controller = "EmployeeAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllEmployees() on controller LogsAPI.Controllers.EmployeeAPIController (LogsAPI).
+2024-02-26 15:33:18.6726|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN1MM8AESS56" sending RST because: "The client closed the connection."
+2024-02-26 15:33:18.6943|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2024-02-26 15:33:18.7040|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2024-02-26 15:33:18.7227|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-02-26 15:33:18.7227|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2024-02-26 15:33:18.7321|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-02-26 15:33:18.7538|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller LogsAPI.Controllers.EmployeeAPIController (LogsAPI)
+2024-02-26 15:33:18.7538|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-02-26 15:33:18.7641|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-02-26 15:33:18.7850|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller LogsAPI.Controllers.EmployeeAPIController (LogsAPI)
+2024-02-26 15:33:18.7850|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller LogsAPI.Controllers.EmployeeAPIController (LogsAPI)
+2024-02-26 15:33:18.7944|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 15:33:18.7944|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 15:33:18.8104|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 15:33:18.8104|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 15:33:18.8261|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 15:33:18.8261|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 15:33:18.8416|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 15:33:18.8416|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 15:33:18.8582|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI) - Validation state: Valid
+2024-02-26 15:33:18.8582|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI) - Validation state: Valid
+2024-02-26 15:33:21.2088|INFO|LogsAPI.Controllers.EmployeeAPIController|All employee are logged.
+2024-02-26 15:33:32.3227|INFO|LogsAPI.Controllers.EmployeeAPIController|All employee are logged.
+2024-02-26 15:34:23.2646|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 8.0.2 initialized 'CoreMvcContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.2' with options: None
+2024-02-26 15:34:23.2646|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 8.0.2 initialized 'CoreMvcContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.2' with options: None
+2024-02-26 15:34:40.2279|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<Employee>()'
+2024-02-26 15:34:40.3604|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Employee>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Employee.EmployeeId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Employee.Email (string) Required MaxLength(100) ANSI, 1], [Property: Employee.FirstName (string) Required MaxLength(50) ANSI, 2], [Property: Employee.HireDate (DateOnly) Required, 3], [Property: Employee.LastName (string) Required MaxLength(50) ANSI, 4], [Property: Employee.Salary (decimal) Required, 5] }
+        SELECT e.EmployeeID, e.Email, e.FirstName, e.HireDate, e.LastName, e.Salary
+        FROM Employee AS e), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Employee>, 
+    DAL.DataAccess.CoreMvcContext, 
+    False, 
+    False, 
+    True
+)'
+2024-02-26 15:34:40.3889|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection.
+2024-02-26 15:34:40.3889|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection.
+2024-02-26 15:34:40.3889|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (10ms).
+2024-02-26 15:34:40.4065|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (18ms).
+2024-02-26 15:34:40.4065|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'CoreMVC' on server 'DESKTOP-2JN7IG8\SQLEXPRESS'.
+2024-02-26 15:34:40.4231|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'CoreMVC' on server 'DESKTOP-2JN7IG8\SQLEXPRESS'.
+2024-02-26 15:34:40.5026|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'CoreMVC' on server 'DESKTOP-2JN7IG8\SQLEXPRESS'.
+2024-02-26 15:34:40.5026|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'CoreMVC' on server 'DESKTOP-2JN7IG8\SQLEXPRESS'.
+2024-02-26 15:34:40.5150|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2024-02-26 15:34:40.5150|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2024-02-26 15:34:40.5303|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (17ms).
+2024-02-26 15:34:40.5303|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (17ms).
+2024-02-26 15:34:40.5467|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (33ms).
+2024-02-26 15:34:40.5467|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (33ms).
+2024-02-26 15:34:40.5623|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[EmployeeID], [e].[Email], [e].[FirstName], [e].[HireDate], [e].[LastName], [e].[Salary]
+FROM [Employee] AS [e]
+2024-02-26 15:34:40.5623|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[EmployeeID], [e].[Email], [e].[FirstName], [e].[HireDate], [e].[LastName], [e].[Salary]
+FROM [Employee] AS [e]
+2024-02-26 15:34:40.6129|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (38ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[EmployeeID], [e].[Email], [e].[FirstName], [e].[HireDate], [e].[LastName], [e].[Salary]
+FROM [Employee] AS [e]
+2024-02-26 15:34:40.6129|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (46ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[EmployeeID], [e].[Email], [e].[FirstName], [e].[HireDate], [e].[LastName], [e].[Salary]
+FROM [Employee] AS [e]
+2024-02-26 15:34:40.6474|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 15:34:40.6474|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 15:34:40.6720|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 15:34:40.6720|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 15:34:40.6720|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 15:34:40.6913|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 15:34:40.6913|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 15:34:40.7091|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 15:34:40.7187|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 15:34:40.7187|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 15:34:40.7373|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 15:34:40.7373|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 15:34:40.7552|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 15:34:40.7646|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 15:34:40.7646|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 15:34:40.7816|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 15:34:40.7816|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'CoreMVC' on server 'DESKTOP-2JN7IG8\SQLEXPRESS'.
+2024-02-26 15:34:40.7976|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'CoreMVC' on server 'DESKTOP-2JN7IG8\SQLEXPRESS'.
+2024-02-26 15:34:40.7976|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'CoreMVC' on server 'DESKTOP-2JN7IG8\SQLEXPRESS' is being disposed after spending 176ms reading results.
+2024-02-26 15:34:40.8144|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'CoreMVC' on server 'DESKTOP-2JN7IG8\SQLEXPRESS' is being disposed after spending 191ms reading results.
+2024-02-26 15:34:40.8144|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'CoreMVC' on server 'DESKTOP-2JN7IG8\SQLEXPRESS'.
+2024-02-26 15:34:40.8317|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'CoreMVC' on server 'DESKTOP-2JN7IG8\SQLEXPRESS'.
+2024-02-26 15:34:40.8445|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'CoreMVC' on server 'DESKTOP-2JN7IG8\SQLEXPRESS' (19ms).
+2024-02-26 15:34:40.8445|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'CoreMVC' on server 'DESKTOP-2JN7IG8\SQLEXPRESS' (17ms).
+2024-02-26 15:34:54.0083|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 92301.9988ms.
+2024-02-26 15:34:54.0083|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 95130.747ms.
+2024-02-26 15:34:54.0189|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 15:34:54.0189|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 15:34:54.0361|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 15:34:54.0448|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 15:34:54.0448|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 15:34:54.0618|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 15:34:54.0618|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 15:34:54.0789|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 15:34:54.0789|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 15:34:54.0965|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 15:34:54.0965|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 15:34:54.1143|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 15:34:54.1235|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-02-26 15:34:54.1235|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-02-26 15:34:54.1425|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-02-26 15:34:54.1425|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-02-26 15:34:54.1596|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2024-02-26 15:34:54.1596|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2024-02-26 15:34:54.1765|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-02-26 15:34:54.1765|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-02-26 15:34:54.1924|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result.
+2024-02-26 15:34:54.1924|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result.
+2024-02-26 15:34:54.2092|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-02-26 15:34:54.2173|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-02-26 15:34:54.2173|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DAL.DataAccess.Employee, DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-26 15:34:54.2332|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DAL.DataAccess.Employee, DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-26 15:34:57.7074|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS57" sending HEADERS frame for stream ID 1 with length 74 and flags END_HEADERS.
+2024-02-26 15:34:57.7074|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-02-26 15:34:57.7176|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS57" sending DATA frame for stream ID 1 with length 1044 and flags NONE.
+2024-02-26 15:34:57.7176|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 15:34:57.7365|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS57" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0.
+2024-02-26 15:34:57.7365|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 15:34:57.7546|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS57" received WINDOW_UPDATE frame for stream ID 1 with length 4 and flags 0x0.
+2024-02-26 15:34:57.7638|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI) in 99010.3844ms
+2024-02-26 15:34:57.7074|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-02-26 15:34:57.7817|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI)'
+2024-02-26 15:34:57.7817|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 15:34:57.7989|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS57" sending DATA frame for stream ID 1 with length 0 and flags END_STREAM.
+2024-02-26 15:34:57.7989|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'CoreMvcContext' disposed.
+2024-02-26 15:34:57.7989|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 15:34:57.8266|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'CoreMVC' on server 'DESKTOP-2JN7IG8\SQLEXPRESS'.
+2024-02-26 15:34:57.8266|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI) in 99197.8771ms
+2024-02-26 15:34:57.8428|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database '' on server '' (16ms).
+2024-02-26 15:34:57.8428|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI)'
+2024-02-26 15:34:57.8600|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7278/api/EmployeeAPI - 200 - application/json;+charset=utf-8 99345.8172ms
+2024-02-26 15:34:57.8600|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'CoreMvcContext' disposed.
+2024-02-26 15:34:57.8767|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'CoreMVC' on server 'DESKTOP-2JN7IG8\SQLEXPRESS'.
+2024-02-26 15:34:57.8940|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database '' on server '' (9ms).
+2024-02-26 15:34:57.8940|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7278/api/EmployeeAPI - 499 - application/json;+charset=utf-8 99544.3063ms
+2024-02-26 15:34:57.9041|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|The connection queue processing loop for 0HN1MM8AESS56 completed.
+2024-02-26 15:34:57.9224|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1MM8AESS56" stopped.
+2024-02-26 15:36:08.1677|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS57" received HEADERS frame for stream ID 3 with length 156 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-02-26 15:36:18.1812|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN1MM8AESS57" received FIN.
+2024-02-26 15:36:25.1753|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS57" received PING frame for stream ID 0 with length 8 and flags NONE.
+2024-02-26 15:36:25.1753|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS57" is closed. The last processed stream ID was 3.
+2024-02-26 15:36:25.1852|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MM8AESS57" sending PING frame for stream ID 0 with length 8 and flags ACK.
+2024-02-26 15:36:25.1753|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7278/swagger/index.html - - -
+2024-02-26 15:36:25.2039|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN1MM8AESS57" sending RST because: "The client closed the connection."
+2024-02-26 15:36:25.2207|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2024-02-26 15:36:25.2380|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html'
+2024-02-26 15:36:25.2380|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2024-02-26 15:36:25.2552|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection.
+2024-02-26 15:36:25.2642|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection.
+2024-02-26 15:36:25.2642|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7278/swagger/index.html - 200 - text/html;charset=utf-8 98.2053ms
+2024-02-26 15:36:25.2828|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|The connection queue processing loop for 0HN1MM8AESS57 completed.
+2024-02-26 15:36:25.2828|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1MM8AESS57" stopped.
+2024-02-26 15:36:54.0938|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2024-02-26 15:37:11.4270|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2024-02-26 15:37:11.6497|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7278
+2024-02-26 15:37:11.6596|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5016
+2024-02-26 15:37:11.6596|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly LogsAPI
+2024-02-26 15:37:11.6772|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-02-26 15:37:11.6857|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-02-26 15:37:11.6857|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-02-26 15:37:11.7043|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-02-26 15:37:11.7043|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\BAPS\Desktop\ASP.NET Core\API\Jinay Shah - LogsAPI\LogsAPI\LogsAPI
+2024-02-26 15:37:11.7222|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2024-02-26 15:37:11.7416|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1MMAPIAJUR" accepted.
+2024-02-26 15:37:11.7525|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1MMAPIAJUR" started.
+2024-02-26 15:37:11.7827|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN1MMAPIAJUR" received FIN.
+2024-02-26 15:37:11.8008|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection.|System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-02-26 15:37:11.8148|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1MMAPIAJUR" stopped.
+2024-02-26 15:37:11.8270|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN1MMAPIAJUR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-26 15:37:11.8983|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1MMAPIAJUS" accepted.
+2024-02-26 15:37:11.9099|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1MMAPIAJUS" started.
+2024-02-26 15:37:11.9463|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HN1MMAPIAJUS established using the following protocol: Tls13
+2024-02-26 15:37:11.9774|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" sending SETTINGS frame for stream ID 0 with length 24 and flags NONE.
+2024-02-26 15:37:11.9899|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" sending WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0.
+2024-02-26 15:37:12.0045|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" received SETTINGS frame for stream ID 0 with length 24 and flags NONE.
+2024-02-26 15:37:12.0227|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" sending SETTINGS frame for stream ID 0 with length 0 and flags ACK.
+2024-02-26 15:37:12.0348|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0.
+2024-02-26 15:37:12.0473|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" received HEADERS frame for stream ID 1 with length 432 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-02-26 15:37:12.0716|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" received SETTINGS frame for stream ID 0 with length 0 and flags ACK.
+2024-02-26 15:37:12.0930|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7278/swagger/index.html - - -
+2024-02-26 15:37:12.2203|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2024-02-26 15:37:12.2352|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2024-02-26 15:37:12.2577|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html'
+2024-02-26 15:37:12.2679|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2024-02-26 15:37:12.3353|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection.
+2024-02-26 15:37:12.3470|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" sending HEADERS frame for stream ID 1 with length 66 and flags END_HEADERS.
+2024-02-26 15:37:12.3584|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" sending DATA frame for stream ID 1 with length 4096 and flags NONE.
+2024-02-26 15:37:12.3748|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" sending DATA frame for stream ID 1 with length 987 and flags NONE.
+2024-02-26 15:37:12.3748|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection.
+2024-02-26 15:37:12.3887|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" sending DATA frame for stream ID 1 with length 81 and flags NONE.
+2024-02-26 15:37:12.3887|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7278/swagger/index.html - 200 - text/html;charset=utf-8 315.1246ms
+2024-02-26 15:37:12.4108|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" received HEADERS frame for stream ID 3 with length 110 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-02-26 15:37:12.4108|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" sending DATA frame for stream ID 1 with length 0 and flags END_STREAM.
+2024-02-26 15:37:12.4211|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7278/_framework/aspnetcore-browser-refresh.js - - -
+2024-02-26 15:37:12.4211|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" received HEADERS frame for stream ID 5 with length 58 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-02-26 15:37:12.4563|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" sending HEADERS frame for stream ID 3 with length 60 and flags END_HEADERS.
+2024-02-26 15:37:12.4563|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7278/_vs/browserLink - - -
+2024-02-26 15:37:12.4756|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" sending DATA frame for stream ID 3 with length 13750 and flags NONE.
+2024-02-26 15:37:12.4987|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" sending DATA frame for stream ID 3 with length 0 and flags END_STREAM.
+2024-02-26 15:37:12.4987|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7278/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript;+charset=utf-8 67.3145ms
+2024-02-26 15:37:12.4987|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" sending HEADERS frame for stream ID 5 with length 149 and flags END_HEADERS.
+2024-02-26 15:37:12.5187|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" sending DATA frame for stream ID 5 with length 9986 and flags NONE.
+2024-02-26 15:37:12.5381|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 15:37:12.5499|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 15:37:12.5499|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 15:37:12.5606|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 15:37:12.5820|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 15:37:12.5930|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 15:37:12.5930|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 15:37:12.6145|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 15:37:12.6242|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 15:37:12.6242|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 15:37:12.6451|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 15:37:12.6557|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 15:37:12.6704|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 15:37:12.6704|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 15:37:12.6910|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" sending DATA frame for stream ID 5 with length 160 and flags NONE.
+2024-02-26 15:37:12.6910|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7278/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 225.8255ms
+2024-02-26 15:37:12.7012|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" sending DATA frame for stream ID 5 with length 0 and flags END_STREAM.
+2024-02-26 15:37:12.7559|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" received HEADERS frame for stream ID 7 with length 67 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-02-26 15:37:12.7693|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7278/swagger/v1/swagger.json - - -
+2024-02-26 15:37:12.7835|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2024-02-26 15:37:12.7964|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json'
+2024-02-26 15:37:12.7964|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2024-02-26 15:37:12.8969|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" sending HEADERS frame for stream ID 7 with length 35 and flags END_HEADERS.
+2024-02-26 15:37:12.9079|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" sending DATA frame for stream ID 7 with length 4704 and flags NONE.
+2024-02-26 15:37:12.9193|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" sending DATA frame for stream ID 7 with length 0 and flags END_STREAM.
+2024-02-26 15:37:12.9193|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7278/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 150.2109ms
+2024-02-26 15:37:16.4619|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" received HEADERS frame for stream ID 9 with length 34 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-02-26 15:37:33.4160|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7278/api/EmployeeAPI - - -
+2024-02-26 15:37:33.4251|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2024-02-26 15:37:33.4383|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/EmployeeAPI'
+2024-02-26 15:37:33.4383|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI)' with route pattern 'api/EmployeeAPI' is valid for the request path '/api/EmployeeAPI'
+2024-02-26 15:37:33.4597|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI)'
+2024-02-26 15:37:33.4701|TRACE|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|The endpoint does not specify the IRequestSizeLimitMetadata.
+2024-02-26 15:37:33.4701|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-02-26 15:37:33.4942|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI)'
+2024-02-26 15:37:33.5172|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllEmployees", controller = "EmployeeAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllEmployees() on controller LogsAPI.Controllers.EmployeeAPIController (LogsAPI).
+2024-02-26 15:37:33.5172|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2024-02-26 15:37:33.5296|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2024-02-26 15:37:33.5481|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-02-26 15:37:33.5481|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2024-02-26 15:37:33.5669|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-02-26 15:37:33.5780|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller LogsAPI.Controllers.EmployeeAPIController (LogsAPI)
+2024-02-26 15:37:38.4059|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-02-26 15:37:38.4295|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller LogsAPI.Controllers.EmployeeAPIController (LogsAPI)
+2024-02-26 15:37:38.4404|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 15:37:38.4404|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 15:37:38.4510|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 15:37:38.4697|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 15:37:38.4831|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI) - Validation state: Valid
+2024-02-26 15:37:38.4831|INFO|LogsAPI.Controllers.EmployeeAPIController|All employee are logged.
+2024-02-26 15:37:38.5507|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 15:37:38.5607|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 15:37:38.5607|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 15:37:38.5794|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 15:37:38.5929|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI) in 5012.8873ms
+2024-02-26 15:37:38.5929|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI)'
+2024-02-26 15:37:38.6140|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.|System.Exception: checking logger
+   at LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees() in C:\Users\BAPS\Desktop\ASP.NET Core\API\Jinay Shah - LogsAPI\LogsAPI\LogsAPI\Controllers\EmployeeAPIController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-02-26 15:37:38.6288|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" sending HEADERS frame for stream ID 9 with length 60 and flags END_HEADERS.
+2024-02-26 15:37:38.6288|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7278/api/EmployeeAPI - 500 - text/plain;+charset=utf-8 5214.1930ms
+2024-02-26 15:37:38.6393|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" sending DATA frame for stream ID 9 with length 2838 and flags END_STREAM.
+2024-02-26 15:37:38.6585|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMAPIAJUS" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0.
+2024-02-26 16:07:23.1748|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2024-02-26 16:07:40.5086|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2024-02-26 16:07:40.8324|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7278
+2024-02-26 16:07:40.8433|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5016
+2024-02-26 16:07:40.8433|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly LogsAPI
+2024-02-26 16:07:40.8635|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-02-26 16:07:40.8731|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-02-26 16:07:40.8731|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-02-26 16:07:40.8940|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-02-26 16:07:40.9054|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\BAPS\Desktop\ASP.NET Core\API\Jinay Shah - LogsAPI\LogsAPI\LogsAPI
+2024-02-26 16:07:40.9054|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2024-02-26 16:07:41.1358|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1MMRQOPDEM" accepted.
+2024-02-26 16:07:41.1464|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1MMRQOPDEM" started.
+2024-02-26 16:07:41.1628|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN1MMRQOPDEM" received FIN.
+2024-02-26 16:07:41.1772|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection.|System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-02-26 16:07:41.1911|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1MMRQOPDEM" stopped.
+2024-02-26 16:07:41.2042|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN1MMRQOPDEM" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-26 16:07:41.4601|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1MMRQOPDEN" accepted.
+2024-02-26 16:07:41.4725|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1MMRQOPDEN" started.
+2024-02-26 16:07:41.5148|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HN1MMRQOPDEN established using the following protocol: Tls13
+2024-02-26 16:07:41.5604|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" sending SETTINGS frame for stream ID 0 with length 24 and flags NONE.
+2024-02-26 16:07:41.5604|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" sending WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0.
+2024-02-26 16:07:41.5758|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" received SETTINGS frame for stream ID 0 with length 24 and flags NONE.
+2024-02-26 16:07:41.5977|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" sending SETTINGS frame for stream ID 0 with length 0 and flags ACK.
+2024-02-26 16:07:41.6115|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0.
+2024-02-26 16:07:41.6251|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" received HEADERS frame for stream ID 1 with length 432 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-02-26 16:07:41.6531|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" received SETTINGS frame for stream ID 0 with length 0 and flags ACK.
+2024-02-26 16:07:41.6798|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7278/swagger/index.html - - -
+2024-02-26 16:07:41.8758|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2024-02-26 16:07:41.8758|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2024-02-26 16:07:41.9085|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html'
+2024-02-26 16:07:41.9205|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2024-02-26 16:07:41.9884|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection.
+2024-02-26 16:07:42.0010|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" sending HEADERS frame for stream ID 1 with length 66 and flags END_HEADERS.
+2024-02-26 16:07:42.0010|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" sending DATA frame for stream ID 1 with length 4096 and flags NONE.
+2024-02-26 16:07:42.0134|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" sending DATA frame for stream ID 1 with length 1068 and flags NONE.
+2024-02-26 16:07:42.0134|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection.
+2024-02-26 16:07:42.0523|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" sending DATA frame for stream ID 1 with length 0 and flags END_STREAM.
+2024-02-26 16:07:42.0523|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7278/swagger/index.html - 200 - text/html;charset=utf-8 377.8200ms
+2024-02-26 16:07:42.0634|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" received HEADERS frame for stream ID 3 with length 110 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-02-26 16:07:42.0934|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" received HEADERS frame for stream ID 5 with length 58 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-02-26 16:07:42.0934|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7278/_framework/aspnetcore-browser-refresh.js - - -
+2024-02-26 16:07:42.0934|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7278/_vs/browserLink - - -
+2024-02-26 16:07:42.1139|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" sending HEADERS frame for stream ID 3 with length 60 and flags END_HEADERS.
+2024-02-26 16:07:42.1388|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" sending DATA frame for stream ID 3 with length 13750 and flags NONE.
+2024-02-26 16:07:42.2082|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" sending DATA frame for stream ID 3 with length 0 and flags END_STREAM.
+2024-02-26 16:07:42.2082|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7278/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript;+charset=utf-8 114.6042ms
+2024-02-26 16:07:42.2198|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" sending HEADERS frame for stream ID 5 with length 119 and flags END_HEADERS.
+2024-02-26 16:07:42.2413|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" sending DATA frame for stream ID 5 with length 9986 and flags NONE.
+2024-02-26 16:07:42.2541|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 16:07:42.2651|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 16:07:42.2651|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 16:07:42.2799|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 16:07:42.2953|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 16:07:42.3183|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 16:07:42.3283|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 16:07:42.3283|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 16:07:42.3514|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 16:07:42.3613|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 16:07:42.3613|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 16:07:42.3731|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 16:07:42.3937|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 16:07:42.4077|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 16:07:42.4077|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" sending DATA frame for stream ID 5 with length 160 and flags NONE.
+2024-02-26 16:07:42.4199|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7278/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 316.6735ms
+2024-02-26 16:07:42.4199|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" sending DATA frame for stream ID 5 with length 0 and flags END_STREAM.
+2024-02-26 16:07:42.4872|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" received HEADERS frame for stream ID 7 with length 67 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-02-26 16:07:42.5020|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7278/swagger/v1/swagger.json - - -
+2024-02-26 16:07:42.5173|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2024-02-26 16:07:42.5292|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json'
+2024-02-26 16:07:42.5292|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2024-02-26 16:07:42.6163|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" sending HEADERS frame for stream ID 7 with length 35 and flags END_HEADERS.
+2024-02-26 16:07:42.6273|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" sending DATA frame for stream ID 7 with length 4704 and flags NONE.
+2024-02-26 16:07:42.6273|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" sending DATA frame for stream ID 7 with length 0 and flags END_STREAM.
+2024-02-26 16:07:42.6273|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7278/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 136.3373ms
+2024-02-26 16:07:47.8777|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" received HEADERS frame for stream ID 9 with length 34 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-02-26 16:08:04.8481|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7278/api/EmployeeAPI - - -
+2024-02-26 16:08:04.8582|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2024-02-26 16:08:04.8727|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/EmployeeAPI'
+2024-02-26 16:08:04.8727|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI)' with route pattern 'api/EmployeeAPI' is valid for the request path '/api/EmployeeAPI'
+2024-02-26 16:08:04.8958|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI)'
+2024-02-26 16:08:04.9061|TRACE|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|The endpoint does not specify the IRequestSizeLimitMetadata.
+2024-02-26 16:08:04.9061|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-02-26 16:08:04.9312|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI)'
+2024-02-26 16:08:04.9550|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllEmployees", controller = "EmployeeAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllEmployees() on controller LogsAPI.Controllers.EmployeeAPIController (LogsAPI).
+2024-02-26 16:08:04.9550|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2024-02-26 16:08:04.9669|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2024-02-26 16:08:04.9854|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-02-26 16:08:04.9854|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2024-02-26 16:08:05.0063|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-02-26 16:08:05.0172|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller LogsAPI.Controllers.EmployeeAPIController (LogsAPI)
+2024-02-26 16:08:05.1291|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-02-26 16:08:05.1526|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller LogsAPI.Controllers.EmployeeAPIController (LogsAPI)
+2024-02-26 16:08:05.1636|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 16:08:05.1735|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 16:08:05.1735|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 16:08:05.1926|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 16:08:05.2065|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI) - Validation state: Valid
+2024-02-26 16:08:05.2184|INFO|LogsAPI.Controllers.EmployeeAPIController|All employee are logged.
+2024-02-26 16:08:05.5917|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 8.0.2 initialized 'CoreMvcContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.2' with options: None
+2024-02-26 16:08:05.6212|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<Employee>()'
+2024-02-26 16:08:05.7578|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Employee>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Employee.EmployeeId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Employee.Email (string) Required MaxLength(100) ANSI, 1], [Property: Employee.FirstName (string) Required MaxLength(50) ANSI, 2], [Property: Employee.HireDate (DateOnly) Required, 3], [Property: Employee.LastName (string) Required MaxLength(50) ANSI, 4], [Property: Employee.Salary (decimal) Required, 5] }
+        SELECT e.EmployeeID, e.Email, e.FirstName, e.HireDate, e.LastName, e.Salary
+        FROM Employee AS e), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Employee>, 
+    DAL.DataAccess.CoreMvcContext, 
+    False, 
+    False, 
+    True
+)'
+2024-02-26 16:08:05.7890|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection.
+2024-02-26 16:08:05.8038|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (12ms).
+2024-02-26 16:08:05.8172|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'CoreMVC' on server 'DESKTOP-2JN7IG8\SQLEXPRESS'.
+2024-02-26 16:08:05.8731|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'CoreMVC' on server 'DESKTOP-2JN7IG8\SQLEXPRESS'.
+2024-02-26 16:08:05.8731|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2024-02-26 16:08:05.9017|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (13ms).
+2024-02-26 16:08:05.9142|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (28ms).
+2024-02-26 16:08:05.9296|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[EmployeeID], [e].[Email], [e].[FirstName], [e].[HireDate], [e].[LastName], [e].[Salary]
+FROM [Employee] AS [e]
+2024-02-26 16:08:05.9681|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (39ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[EmployeeID], [e].[Email], [e].[FirstName], [e].[HireDate], [e].[LastName], [e].[Salary]
+FROM [Employee] AS [e]
+2024-02-26 16:08:06.0045|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 16:08:06.0346|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 16:08:06.0454|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 16:08:06.0454|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 16:08:06.0684|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 16:08:06.0796|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 16:08:06.0796|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 16:08:06.1003|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 16:08:06.1141|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'CoreMVC' on server 'DESKTOP-2JN7IG8\SQLEXPRESS'.
+2024-02-26 16:08:06.1317|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'CoreMVC' on server 'DESKTOP-2JN7IG8\SQLEXPRESS' is being disposed after spending 148ms reading results.
+2024-02-26 16:08:06.1452|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'CoreMVC' on server 'DESKTOP-2JN7IG8\SQLEXPRESS'.
+2024-02-26 16:08:06.1600|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'CoreMVC' on server 'DESKTOP-2JN7IG8\SQLEXPRESS' (14ms).
+2024-02-26 16:08:06.1756|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 954.7778ms.
+2024-02-26 16:08:06.1870|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 16:08:06.1870|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 16:08:06.2087|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 16:08:06.2189|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 16:08:06.2189|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 16:08:06.2398|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 16:08:06.2511|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-02-26 16:08:06.2511|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-02-26 16:08:06.2636|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2024-02-26 16:08:06.2842|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-02-26 16:08:06.2842|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result.
+2024-02-26 16:08:06.2954|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-02-26 16:08:06.3162|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DAL.DataAccess.Employee, DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-26 16:08:06.3415|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" sending HEADERS frame for stream ID 9 with length 66 and flags END_HEADERS.
+2024-02-26 16:08:06.3415|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-02-26 16:08:06.3425|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" sending DATA frame for stream ID 9 with length 1044 and flags NONE.
+2024-02-26 16:08:06.3646|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 16:08:06.3750|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0.
+2024-02-26 16:08:06.3750|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 16:08:06.3947|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" received WINDOW_UPDATE frame for stream ID 9 with length 4 and flags 0x0.
+2024-02-26 16:08:06.4045|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI) in 1388.6613ms
+2024-02-26 16:08:06.4241|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI)'
+2024-02-26 16:08:06.4241|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMRQOPDEN" sending DATA frame for stream ID 9 with length 0 and flags END_STREAM.
+2024-02-26 16:08:06.4354|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'CoreMvcContext' disposed.
+2024-02-26 16:08:06.4582|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'CoreMVC' on server 'DESKTOP-2JN7IG8\SQLEXPRESS'.
+2024-02-26 16:08:06.4711|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database '' on server '' (12ms).
+2024-02-26 16:08:06.4842|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7278/api/EmployeeAPI - 200 - application/json;+charset=utf-8 1636.1410ms
+2024-02-26 16:08:58.4025|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2024-02-26 16:08:58.7491|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2024-02-26 16:08:58.9408|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7278
+2024-02-26 16:08:58.9408|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5016
+2024-02-26 16:08:58.9408|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly LogsAPI
+2024-02-26 16:08:58.9408|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-02-26 16:08:58.9509|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-02-26 16:08:58.9509|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-02-26 16:08:58.9509|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-02-26 16:08:58.9509|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\BAPS\Desktop\ASP.NET Core\API\Jinay Shah - LogsAPI\LogsAPI\LogsAPI
+2024-02-26 16:08:58.9509|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2024-02-26 16:08:59.2812|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1MMSI21FTP" accepted.
+2024-02-26 16:08:59.2812|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1MMSI21FTP" started.
+2024-02-26 16:08:59.3221|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN1MMSI21FTP" received FIN.
+2024-02-26 16:08:59.3300|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection.|System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-02-26 16:08:59.3712|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1MMSI21FTP" stopped.
+2024-02-26 16:08:59.3789|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN1MMSI21FTP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-26 16:09:01.8173|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1MMSI21FTQ" accepted.
+2024-02-26 16:09:01.8173|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1MMSI21FTQ" started.
+2024-02-26 16:09:01.8537|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HN1MMSI21FTQ established using the following protocol: Tls13
+2024-02-26 16:09:01.8744|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" sending SETTINGS frame for stream ID 0 with length 24 and flags NONE.
+2024-02-26 16:09:01.8744|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" sending WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0.
+2024-02-26 16:09:01.8744|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" received SETTINGS frame for stream ID 0 with length 24 and flags NONE.
+2024-02-26 16:09:01.8744|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" sending SETTINGS frame for stream ID 0 with length 0 and flags ACK.
+2024-02-26 16:09:01.8744|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0.
+2024-02-26 16:09:01.8900|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" received HEADERS frame for stream ID 1 with length 432 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-02-26 16:09:01.9077|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" received SETTINGS frame for stream ID 0 with length 0 and flags ACK.
+2024-02-26 16:09:01.9265|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7278/swagger/index.html - - -
+2024-02-26 16:09:02.0266|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2024-02-26 16:09:02.0332|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2024-02-26 16:09:02.0463|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html'
+2024-02-26 16:09:02.0463|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2024-02-26 16:09:02.1122|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection.
+2024-02-26 16:09:02.1122|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" sending HEADERS frame for stream ID 1 with length 66 and flags END_HEADERS.
+2024-02-26 16:09:02.1255|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" sending DATA frame for stream ID 1 with length 4096 and flags NONE.
+2024-02-26 16:09:02.1255|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" sending DATA frame for stream ID 1 with length 987 and flags NONE.
+2024-02-26 16:09:02.1255|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" sending DATA frame for stream ID 1 with length 81 and flags NONE.
+2024-02-26 16:09:02.1255|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection.
+2024-02-26 16:09:02.1255|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" sending DATA frame for stream ID 1 with length 0 and flags END_STREAM.
+2024-02-26 16:09:02.1255|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7278/swagger/index.html - 200 - text/html;charset=utf-8 213.8169ms
+2024-02-26 16:09:02.1525|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" received HEADERS frame for stream ID 3 with length 110 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-02-26 16:09:02.1550|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7278/_framework/aspnetcore-browser-refresh.js - - -
+2024-02-26 16:09:02.1550|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" sending HEADERS frame for stream ID 3 with length 60 and flags END_HEADERS.
+2024-02-26 16:09:02.1550|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" sending DATA frame for stream ID 3 with length 13750 and flags NONE.
+2024-02-26 16:09:02.1550|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" sending DATA frame for stream ID 3 with length 0 and flags END_STREAM.
+2024-02-26 16:09:02.1550|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7278/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript;+charset=utf-8 8.0290ms
+2024-02-26 16:09:02.1550|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" received HEADERS frame for stream ID 5 with length 58 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-02-26 16:09:02.1714|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7278/_vs/browserLink - - -
+2024-02-26 16:09:02.1983|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" sending HEADERS frame for stream ID 5 with length 149 and flags END_HEADERS.
+2024-02-26 16:09:02.2038|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" sending DATA frame for stream ID 5 with length 9986 and flags NONE.
+2024-02-26 16:09:02.2038|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 16:09:02.2038|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 16:09:02.2038|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 16:09:02.2038|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 16:09:02.2038|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 16:09:02.2038|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 16:09:02.2038|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 16:09:02.2038|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 16:09:02.2038|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 16:09:02.2038|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 16:09:02.2038|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 16:09:02.2038|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 16:09:02.2171|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 16:09:02.2171|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" sending DATA frame for stream ID 5 with length 10240 and flags NONE.
+2024-02-26 16:09:02.2171|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" sending DATA frame for stream ID 5 with length 160 and flags NONE.
+2024-02-26 16:09:02.2171|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" sending DATA frame for stream ID 5 with length 0 and flags END_STREAM.
+2024-02-26 16:09:02.2171|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7278/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 47.6587ms
+2024-02-26 16:09:02.2555|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" received HEADERS frame for stream ID 7 with length 67 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-02-26 16:09:02.2555|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7278/swagger/v1/swagger.json - - -
+2024-02-26 16:09:02.2555|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2024-02-26 16:09:02.2555|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json'
+2024-02-26 16:09:02.2555|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2024-02-26 16:09:02.3469|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" sending HEADERS frame for stream ID 7 with length 35 and flags END_HEADERS.
+2024-02-26 16:09:02.3469|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" sending DATA frame for stream ID 7 with length 4704 and flags NONE.
+2024-02-26 16:09:02.3469|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" sending DATA frame for stream ID 7 with length 0 and flags END_STREAM.
+2024-02-26 16:09:02.3469|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7278/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 95.7690ms
+2024-02-26 16:09:05.2112|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" received HEADERS frame for stream ID 9 with length 34 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-02-26 16:09:05.2170|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7278/api/EmployeeAPI - - -
+2024-02-26 16:09:05.2170|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2024-02-26 16:09:05.2170|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/EmployeeAPI'
+2024-02-26 16:09:05.2170|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI)' with route pattern 'api/EmployeeAPI' is valid for the request path '/api/EmployeeAPI'
+2024-02-26 16:09:05.2170|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI)'
+2024-02-26 16:09:05.2170|TRACE|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|The endpoint does not specify the IRequestSizeLimitMetadata.
+2024-02-26 16:09:05.2336|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-02-26 16:09:05.2336|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI)'
+2024-02-26 16:09:05.2511|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllEmployees", controller = "EmployeeAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllEmployees() on controller LogsAPI.Controllers.EmployeeAPIController (LogsAPI).
+2024-02-26 16:09:05.2511|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2024-02-26 16:09:05.2511|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2024-02-26 16:09:05.2511|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-02-26 16:09:05.2511|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2024-02-26 16:09:05.2511|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-02-26 16:09:05.2511|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller LogsAPI.Controllers.EmployeeAPIController (LogsAPI)
+2024-02-26 16:09:05.3588|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-02-26 16:09:05.3775|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller LogsAPI.Controllers.EmployeeAPIController (LogsAPI)
+2024-02-26 16:09:05.3775|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 16:09:05.3775|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 16:09:05.3775|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 16:09:05.3775|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 16:09:05.3919|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI) - Validation state: Valid
+2024-02-26 16:09:05.3919|INFO|LogsAPI.Controllers.EmployeeAPIController|All employee are logged.
+2024-02-26 16:09:05.7619|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 8.0.2 initialized 'CoreMvcContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.2' with options: None
+2024-02-26 16:09:05.7863|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<Employee>()'
+2024-02-26 16:09:05.9041|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Employee>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Employee.EmployeeId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Employee.Email (string) Required MaxLength(100) ANSI, 1], [Property: Employee.FirstName (string) Required MaxLength(50) ANSI, 2], [Property: Employee.HireDate (DateOnly) Required, 3], [Property: Employee.LastName (string) Required MaxLength(50) ANSI, 4], [Property: Employee.Salary (decimal) Required, 5] }
+        SELECT e.EmployeeID, e.Email, e.FirstName, e.HireDate, e.LastName, e.Salary
+        FROM Employee AS e), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Employee>, 
+    DAL.DataAccess.CoreMvcContext, 
+    False, 
+    False, 
+    True
+)'
+2024-02-26 16:09:05.9307|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection.
+2024-02-26 16:09:05.9369|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (4ms).
+2024-02-26 16:09:05.9369|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'CoreMVC' on server 'DESKTOP-2JN7IG8\SQLEXPRESS'.
+2024-02-26 16:09:05.9369|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'CoreMVC' on server 'DESKTOP-2JN7IG8\SQLEXPRESS'.
+2024-02-26 16:09:05.9528|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2024-02-26 16:09:05.9528|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (3ms).
+2024-02-26 16:09:05.9528|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (8ms).
+2024-02-26 16:09:05.9668|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[EmployeeID], [e].[Email], [e].[FirstName], [e].[HireDate], [e].[LastName], [e].[Salary]
+FROM [Employee] AS [e]
+2024-02-26 16:09:05.9924|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[EmployeeID], [e].[Email], [e].[FirstName], [e].[HireDate], [e].[LastName], [e].[Salary]
+FROM [Employee] AS [e]
+2024-02-26 16:09:06.0221|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 16:09:06.0442|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 16:09:06.0442|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 16:09:06.0442|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 16:09:06.0442|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 16:09:06.0442|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 16:09:06.0442|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 16:09:06.0442|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'CoreMvcContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 16:09:06.0612|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'CoreMVC' on server 'DESKTOP-2JN7IG8\SQLEXPRESS'.
+2024-02-26 16:09:06.0612|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'CoreMVC' on server 'DESKTOP-2JN7IG8\SQLEXPRESS' is being disposed after spending 69ms reading results.
+2024-02-26 16:09:06.0612|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'CoreMVC' on server 'DESKTOP-2JN7IG8\SQLEXPRESS'.
+2024-02-26 16:09:06.0612|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'CoreMVC' on server 'DESKTOP-2JN7IG8\SQLEXPRESS' (1ms).
+2024-02-26 16:09:06.0783|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 681.9095ms.
+2024-02-26 16:09:06.0783|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 16:09:06.0783|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 16:09:06.0783|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 16:09:06.0783|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 16:09:06.0783|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 16:09:06.0783|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 16:09:06.0914|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-02-26 16:09:06.0914|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-02-26 16:09:06.0914|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2024-02-26 16:09:06.0914|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-02-26 16:09:06.0914|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result.
+2024-02-26 16:09:06.0914|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-02-26 16:09:06.1070|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DAL.DataAccess.Employee, DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-26 16:09:06.1070|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" sending HEADERS frame for stream ID 9 with length 66 and flags END_HEADERS.
+2024-02-26 16:09:06.1070|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-02-26 16:09:06.1070|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" sending DATA frame for stream ID 9 with length 1044 and flags NONE.
+2024-02-26 16:09:06.1070|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 16:09:06.1226|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 16:09:06.1226|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI) in 863.8388ms
+2024-02-26 16:09:06.1226|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'LogsAPI.Controllers.EmployeeAPIController.GetAllEmployees (LogsAPI)'
+2024-02-26 16:09:06.1226|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" sending DATA frame for stream ID 9 with length 0 and flags END_STREAM.
+2024-02-26 16:09:06.1226|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'CoreMvcContext' disposed.
+2024-02-26 16:09:06.1389|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'CoreMVC' on server 'DESKTOP-2JN7IG8\SQLEXPRESS'.
+2024-02-26 16:09:06.1389|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database '' on server '' (2ms).
+2024-02-26 16:09:06.1389|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7278/api/EmployeeAPI - 200 - application/json;+charset=utf-8 927.3736ms
+2024-02-26 17:21:48.6915|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2024-02-26 17:21:48.6915|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping
+2024-02-26 17:21:48.7266|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" is closing.
+2024-02-26 17:21:48.7266|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" is closed. The last processed stream ID was 9.
+2024-02-26 17:21:48.7266|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1MMSI21FTQ" sending GOAWAY frame for stream ID 0 with length 8 and flags 0x0.
+2024-02-26 17:21:48.7319|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN1MMSI21FTQ" received FIN.
+2024-02-26 17:21:48.7319|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN1MMSI21FTQ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-26 17:21:48.7319|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|The connection queue processing loop for 0HN1MMSI21FTQ completed.
+2024-02-26 17:21:48.7319|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1MMSI21FTQ" stopped.
+2024-02-26 17:21:48.7319|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped
