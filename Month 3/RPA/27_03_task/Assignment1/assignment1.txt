@@ -1,0 +1,8 @@
+ASSIGNMENT - 1
+-open excel and make 4 columns: FN,LN,Mobile number, designation.
+-add 10 rows(keep designatin(hr,rpa,php,java) keep in pairs and more and also single).
+-read excel.
+-create folder based on designation.
+-create txtfile with name fn_ln.txt in specific designaiton folder.
+-save all data of respective person in respective file.
+-make joining data folder and inside that make input and output folder make excel and input and remaining other should be dynamically creted to output folder, note make output folder based on date.

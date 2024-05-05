@@ -1,0 +1,5 @@
+boolVariable = bool(0)
+intVariable = int(boolVariable)
+floatVariable = float(boolVariable)
+stringVariable = str(boolVariable)
+print(f"int-{intVariable}\nfloat-{floatVariable}\nboolean-{boolVariable}\nstring-{stringVariable}")

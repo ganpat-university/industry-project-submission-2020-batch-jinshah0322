@@ -1,0 +1,5 @@
+floatVariable = float(input("Enter number:"))
+intVariable = int(floatVariable)
+boolVariable = bool(floatVariable)
+stringVariable = str(floatVariable)
+print(f"int-{intVariable}\nfloat-{floatVariable}\nboolean-{boolVariable}\nstring-{stringVariable}")
